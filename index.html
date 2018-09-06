@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>The Sandwich Shop</title>
+  <link rel="shortcut icon"  href="icons/icon1.png"/>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body>
+  <!--Animation images-->
+    <img id="baguette" src="imgs/baguette-resized.png" alt="baguette sliding from right animation">
+    <img  id="croissants" src="imgs/croissants-resized.png" alt="croissants sliding from right animation">
+  <!--End of animation images  -->
+    <div id="start-page" class="top-container">
+      <img id="burger" src="icons/burger.svg" alt="open mobile navigation">
+          <div id="mob-nav" class="mob-nav">
+                <ul id="mob-ul">
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="#container-b">ABOUT</a></li>
+                  <li><a href="#">OUR STORY</a></li>
+                  <li><a href="#">CONTACT</a></li>
+                  <li><a href="#">GALLERY</a></li>
+                </ul>
+          </div>  <!-- End of mob-nav div -->
+      <div class="wrapper">
+
+
+        <img id="nav-logo" src="icons/logo2.svg" alt="The sandwich house logo">
+              <nav id="desktop-nav">
+                  <a href="#">HOME</a>
+                  <a href="#container-b">ABOUT</a>
+                  <a href="#">OUR STORY</a>
+                  <a href="#">CONTACT</a>
+                  <a href="#">GALLERY</a>
+              </nav>
+
+              <div class="logo-div">
+                    <img id="logo-center" src="icons/logo.svg" alt="The sandwich house logo">
+                    <img id="press-start" class="down-arrow" src="icons/arrow_down.svg" alt="scroll down to start">
+              </div>
+              <h1 id="animation-text">As <span id="fresh">Fresh</span> as it gets</h1>
+
+<!-- Reserved for animation -->
+
+
+</div> <!-- End of top container div -->
+</div> <!-- End of wrapper div -->
+
+
+    <section id="container-b" class="container-b">
+        <div class="section-header flex-center">
+          <div>
+            <h2 class="header-lighter">Create Your Own</h2>
+            <h2 class="header-bold">Sandwich</h2>
+          </div>
+        </div>
+        <div class="cs-sub-header flex-center">
+          <h2 class="h-white">Your Choice Of ...</h2>
+        </div>
+        <!-- <div class="wrapper"> -->
+        <div class="info-container">
+          <div class="col">
+            <img id="iconOne" class="round-icon" src="icons/icon1.svg" alt="baguette icon">
+            <h2 class="h-blue">Bread</h2>
+            <div class="col-text">
+              <p>Lorem, ipsum dolor accusamus veniam? Dolorem ipsum dolorum veniam fugiat. Magnam quisquam ut ipsum! Corporis, dicta laudantium.</p>
+              <p>Error ipsum quia necessitatibus dolorem magni temporibus omnis ad perferendis inventore libero.</p>
+            </div>
+          </div>
+              <div class="arrow-div">
+
+              </div>
+
+          <div class="col">
+            <img id="iconTwo" class="round-icon" src="icons/icon2.svg" alt="ingredients icon">
+            <h2 class="h-blue">Ingredients</h2>
+            <div class="col-text">
+              <p>Lorem, ipsum dolor accusamus veniam? Dolorem ipsum dolorum veniam fugiat. Magnam quisquam ut ipsum! Corporis, dicta laudantium.</p>
+              <p>Error ipsum quia necessitatibus dolorem magni temporibus omnis ad perferendis inventore libero.</p>
+            </div>
+          </div>
+              <div class="arrow-div">
+
+              </div>
+          <div class="col">
+            <img id="iconThree" class="round-icon" src="icons/icon3.svg" alt="delivery truck icon">
+            <h2 class="h-blue">Delivery</h2>
+            <div class="col-text">
+              <p>Lorem, ipsum dolor accusamus veniam? Dolorem ipsum dolorum veniam fugiat. Magnam quisquam ut ipsum! Corporis, dicta laudantium.</p>
+              <p>Error ipsum quia necessitatibus dolorem magni temporibus omnis ad perferendis inventore libero.</p>
+            </div>
+            </div>
+        </div>
+        <div class="container-flex">
+          <img src="imgs/ciabatta.jpeg" alt="Image of one of our top selling ciabatta">
+          <img src="imgs/special-panini.jpeg" alt="Image of our mini panini speciality">
+        </div>
+        <!-- </div>  End of wrapper div --> 
+      </section>
+
+
+<footer>
+  <div class="footer-text">
+    <p>&copy; 2018 | The Sandwich House |</p>
+    <p>All rights reserved | Stefan Cutajar</p>
+  </div>
+
+  <div class="icons-container">
+    <a href="https://www.facebook.com/" target="_blank">
+        <img src="icons/fb.svg" alt="Visit our Facebook page">
+    </a>
+    <a href="https://www.twitter.com/" target="_blank">
+        <img src="icons/twitter.svg" alt="Visit our Twitter page">
+    </a>
+   <a href="https://www.instagram.com/" target="_blank">
+        <img src="icons/instagram.svg" alt="Visit our Instagram page">
+    </a>
+  </div>
+</footer>
+
+
+  <script src="js/main.js"></script>
+	<script>
+    ScrollReveal().reveal('#iconOne',{
+       delay: 150,
+       duration: 700,
+       easing: 'cubic-bezier(.17,.67,.83,.67)'
+       });
+    ScrollReveal().reveal('#iconTwo',{
+       delay: 450,
+       duration: 700,
+       easing: 'cubic-bezier(.17,.67,.83,.67)'
+      });
+    ScrollReveal().reveal('#iconThree', {
+       delay: 450,
+       duration: 700,
+       easing: 'cubic-bezier(.17,.67,.83,.67)' });
+	</script>
+</body>
+</html>
