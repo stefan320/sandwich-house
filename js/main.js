@@ -48,8 +48,8 @@ function start(){
 }
 
 
-document.addEventListener("onLoad",start());
-
+startPage.addEventListener("onLoad",start());
+ console.log("updated");
 
 // function reduceLogoWidth(){
 //   setTimeout(scrollToTop, 300);
