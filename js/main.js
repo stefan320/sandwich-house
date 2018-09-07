@@ -47,7 +47,8 @@ function start(){
     x.addListener(mediaQuery) // Attach listener function on state changes
 }
 
-start();
+document.addEventListener("onLoad",start());
+
 
 // function reduceLogoWidth(){
 //   setTimeout(scrollToTop, 300);
