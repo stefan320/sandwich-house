@@ -5,7 +5,7 @@ var navLogo = document.getElementById('nav-logo');
 var mobUl = document.getElementById('mob-ul');  //The mobile nav ul id
 var startPage = document.getElementById('start-page');  //Traverse to the  content of main page
 var baguette = document.getElementById('baguette');
-var logoCenter = document.getElementById('logo-center');  //landing page center logo
+// var logoCenter = document.getElementById('logo-center');  //landing page center logo
 var animationText = document.getElementById('animation-text');
 var fresh = document.getElementById('fresh');
 var croissants = document.getElementById('croissants');
@@ -33,11 +33,11 @@ function scrollToTop(){
 }
 
 function start(){
-    document.removeEventListener("scroll", reduceLogoWidth);
+    // document.removeEventListener("scroll", reduceLogoWidth);
     startPage.style.position = "initial";
     scrollToTop();
     containerB.style.paddingTop = "0";
-    logoCenter.style.display = "none";
+    // logoCenter.style.display = "none";
     navLogo.style.display = "inline-block";
     fresh.style.color = "#EAB766";
     baguette.style.right = "0";
@@ -47,22 +47,23 @@ function start(){
     x.addListener(mediaQuery) // Attach listener function on state changes
 }
 
+start();
 
-function reduceLogoWidth(){
-  setTimeout(scrollToTop, 300);
-  var logoWidth = window.getComputedStyle(logoCenter).width;
-  console.log(logoWidth);
-  var newWidth = parseInt(logoWidth, 10) - 30;
-  if( newWidth >= 30){
-  var widthValue = newWidth.toString() + "px";
-  var updatedWidth = logoCenter.style.width = widthValue;
-}else{
-  start();
-}
-}
+// function reduceLogoWidth(){
+//   setTimeout(scrollToTop, 300);
+//   var logoWidth = window.getComputedStyle(logoCenter).width;
+//   console.log(logoWidth);
+//   var newWidth = parseInt(logoWidth, 10) - 30;
+//   if( newWidth >= 30){
+//   var widthValue = newWidth.toString() + "px";
+//   var updatedWidth = logoCenter.style.width = widthValue;
+// }else{
+//   start();
+// }
+// }
 
 
-document.addEventListener("scroll", reduceLogoWidth);
+// document.addEventListener("scroll", reduceLogoWidth);
 
 
 
