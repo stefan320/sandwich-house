@@ -47,6 +47,7 @@ function start(){
     x.addListener(mediaQuery) // Attach listener function on state changes
 }
 
+alert("updated");
 document.addEventListener("onLoad",start());
 
 
