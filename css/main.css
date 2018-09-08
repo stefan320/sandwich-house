@@ -16,7 +16,7 @@ html{
 }
 
 .top-container{
-    height: calc(100vh + 1px);
+    height: 100vh;
     width: 100%;
     background: transparent url("../imgs/wood3.jpg") repeat fixed center;
     background-size: cover;
@@ -105,8 +105,9 @@ Mobile Start
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
+
 }
 
 #logo-center{
@@ -138,11 +139,11 @@ Mobile Start
     max-width: 60%;
     position: absolute;
     left: -65%;
-    top: 40%;
+    top: 35%;
     margin: 0;
     padding: 0;
     line-height: 1.18;
-    transition: left .6s cubic-bezier(.08,.4,.7,1.36) .1s;
+    transition: left .6s cubic-bezier(.08,.4,.7,1.36) .5s;
 }
 #fresh{
     font-weight: 900;

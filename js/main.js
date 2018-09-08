@@ -1,4 +1,4 @@
-var pressToStart = document.getElementById('press-start');
+// var pressToStart = document.getElementById('press-start');
 var burger = document.getElementById('burger');
 var mobNav = document.getElementById('mob-nav');
 var navLogo = document.getElementById('nav-logo');
@@ -49,7 +49,7 @@ function start(){
 
 
 window.addEventListener("load",start);
- console.log("update");
+ console.log("updatedddddd");
 
 // function reduceLogoWidth(){
 //   setTimeout(scrollToTop, 300);
