@@ -48,7 +48,7 @@ function start(){
 }
 
 
-startPage.addEventListener("load",start());
+window.addEventListener("load",start);
  console.log("update");
 
 // function reduceLogoWidth(){
