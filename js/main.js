@@ -33,6 +33,8 @@ function scrollToTop(){
 }
 
 function start(){
+    var h =  Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+    startPage.style.height = h + "px";
     // document.removeEventListener("scroll", reduceLogoWidth);
     startPage.style.position = "initial";
     scrollToTop();
