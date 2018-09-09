@@ -42,7 +42,7 @@ function start(){
     // logoCenter.style.display = "none";
     navLogo.style.display = "inline-block";
     fresh.style.color = "#EAB766";
-    baguette.style.right = "0";
+    baguette.style.right = "calc(0px - 7.5vw)";
     croissants.style.left = "0";
     animationText.style.left = "0";
     mediaQuery(x) // Call listener function at run time
@@ -52,7 +52,7 @@ function start(){
 
 
 window.addEventListener("load",start);
- console.log("update f");
+ console.log("update");
 
 // function reduceLogoWidth(){
 //   setTimeout(scrollToTop, 300);
