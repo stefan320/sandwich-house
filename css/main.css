@@ -16,7 +16,7 @@ html{
 }
 
 .top-container{
-    height: 100vh;
+    height: calc(100vh - 73px);
     width: 100%;
     background: transparent url("../imgs/wood3.jpg") repeat fixed center;
     background-size: cover;
@@ -139,7 +139,7 @@ Mobile Start
     max-width: 60%;
     position: absolute;
     left: -65%;
-    top: 35%;
+    top: 30%;
     margin: 0;
     padding: 0;
     line-height: 1.18;
@@ -355,6 +355,9 @@ line-height: 1.5;
 
 }
 @media only screen and (min-width: 1000px){
+  .top-container{
+    height: 100vh;
+  }
 
   #burger{
     display: none;

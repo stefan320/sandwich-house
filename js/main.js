@@ -48,8 +48,9 @@ function start(){
 }
 
 
+
 window.addEventListener("load",start);
- console.log("updatedddddd");
+ console.log("update");
 
 // function reduceLogoWidth(){
 //   setTimeout(scrollToTop, 300);
