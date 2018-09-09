@@ -308,7 +308,7 @@ line-height: 1.5;
         transition: left .5s;
         position: absolute;
         bottom: 0;
-        left: calc(-50%- 8vw);
+        left: calc(-50% - 8vw);
 }
       #nav-logo{
         width: 20%;
