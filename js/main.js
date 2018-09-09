@@ -26,6 +26,7 @@ function mediaQuery(x) {
     }
 }
 
+
 var x = window.matchMedia("(min-width: 1000px)")
 
 
@@ -45,7 +46,7 @@ function start(){
     navLogo.style.display = "inline-block";
     fresh.style.color = "#EAB766";
     baguette.style.right = "calc(0px - 7.5vw)";
-    croissants.style.left = "0";
+    croissants.style.left = "calc(0px - 7.5vw)";
     animationText.style.left = "0";
     mediaQuery(x) // Call listener function at run time
     x.addListener(mediaQuery) // Attach listener function on state changes
