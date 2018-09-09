@@ -35,6 +35,7 @@ function scrollToTop(){
 function start(){
     var viewportHeight = $('#start-page').outerHeight();
     $('#start-page').css({ height: viewportHeight });
+    console.log(viewportHeight);
     // document.removeEventListener("scroll", reduceLogoWidth);
     startPage.style.position = "initial";
     scrollToTop();

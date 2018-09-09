@@ -16,7 +16,7 @@ html{
 }
 
 .top-container{
-    height: 700px;
+    height: 100vh;
     width: 100%;
     background: transparent url("../imgs/wood3.jpg") repeat fixed center;
     background-size: cover;
