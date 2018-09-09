@@ -129,7 +129,7 @@ Mobile Start
   bottom: 0;
   right: calc(-250px - 8%);
   width: 250px;
-  height: 95%;
+  height: 95vh;
   transition: right .5s;
 }
 #animation-text{
