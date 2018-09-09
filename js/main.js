@@ -33,8 +33,8 @@ function scrollToTop(){
 }
 
 function start(){
-    var h =  Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
-    startPage.style.height = h + "px";
+    var viewportHeight = $('#start-page').outerHeight();
+    $('#start-page').css({ height: viewportHeight });
     // document.removeEventListener("scroll", reduceLogoWidth);
     startPage.style.position = "initial";
     scrollToTop();
@@ -52,7 +52,7 @@ function start(){
 
 
 window.addEventListener("load",start);
- console.log("update");
+ console.log("update f");
 
 // function reduceLogoWidth(){
 //   setTimeout(scrollToTop, 300);
