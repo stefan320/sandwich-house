@@ -127,7 +127,7 @@ Mobile Start
   display: inline-block;
   position: absolute;
   bottom: 0;
-  right: -70%;
+  right: calc(-250px - 8%);
   width: 250px;
   height: 95%;
   transition: right .5s;

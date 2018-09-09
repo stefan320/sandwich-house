@@ -15,6 +15,9 @@ var desktopNav = document.getElementById('desktop-nav');
 // The event listener is immediatly removed
 // The centered logo is removed
 // the nav icon is shown while the animation for baguette croissant and animation text starts
+var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+
 
 function mediaQuery(x) {
     if (x.matches) { // If media query matches
@@ -33,9 +36,10 @@ function scrollToTop(){
 }
 
 function start(){
-    var viewportHeight = $('#start-page').outerHeight();
-    $('#start-page').css({ height: viewportHeight });
-    console.log(viewportHeight);
+    // var viewportHeight = $('#start-page').outerHeight();
+    // $('#start-page').css({ height: viewportHeight });
+    console.log(h + "px");
+    startPage.style.height = h + "px";
     // document.removeEventListener("scroll", reduceLogoWidth);
     startPage.style.position = "initial";
     scrollToTop();
