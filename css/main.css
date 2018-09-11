@@ -399,7 +399,8 @@ footer{
     order: 0;
   }
   .image{
-      background-image:  url("../imgs/ciabatta.jpeg");
+    display: block;
+    background-image:  url("../imgs/ciabatta.jpeg");
   }
 
 }
