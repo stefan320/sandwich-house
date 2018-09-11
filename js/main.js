@@ -1,16 +1,17 @@
 // var pressToStart = document.getElementById('press-start');
-var burger = document.getElementById('burger');
-var mobNav = document.getElementById('mob-nav');
-var navLogo = document.getElementById('nav-logo');
-var mobUl = document.getElementById('mob-ul');  //The mobile nav ul id
-var startPage = document.getElementById('start-page');  //Traverse to the  content of main page
-var baguette = document.getElementById('baguette');
-// var logoCenter = document.getElementById('logo-center');  //landing page center logo
-var animationText = document.getElementById('animation-text');
-var fresh = document.getElementById('fresh');
-var croissants = document.getElementById('croissants');
-var containerB = document.getElementById('container-b');
-var desktopNav = document.getElementById('desktop-nav');
+const burger = document.getElementById('burger');
+const mobNav = document.getElementById('mob-nav');
+const navLogo = document.getElementById('nav-logo');
+const mobUl = document.getElementById('mob-ul');  //The mobile nav ul id
+const desktopNav = document.getElementById('desktop-nav');
+const startPage = document.getElementById('start-page');  //Traverse to the  content of main page
+const baguette = document.getElementById('baguette');
+// const logoCenter = document.getElementById('logo-center');  //landing page center logo
+const animationText = document.getElementById('animation-text');
+const fresh = document.getElementById('fresh');
+const croissants = document.getElementById('croissants');
+const containerB = document.getElementById('container-b');
+
 // When landing page is scrolled down event listener is fired
 // The event listener is immediatly removed
 // The centered logo is removed
@@ -27,7 +28,7 @@ function mediaQuery(x) {
 }
 
 
-var x = window.matchMedia("(min-width: 1000px)")
+const x = window.matchMedia("(min-width: 1000px)")
 
 
 
@@ -35,19 +36,20 @@ function scrollToTop(){
     window.scrollTo(0, 0);
 }
 
+function startAnimation(){
+  fresh.style.color = "#EAB766";
+  baguette.style.right = "0";
+  croissants.style.left = "0";
+  animationText.style.left = "0";
+}
+
 function start(){
-    // var viewportHeight = $('#start-page').outerHeight();
-    // $('#start-page').css({ height: viewportHeight });
-    // document.removeEventListener("scroll", reduceLogoWidth);
+
     startPage.style.position = "initial";
     scrollToTop();
     containerB.style.paddingTop = "0";
-    // logoCenter.style.display = "none";
     navLogo.style.display = "inline-block";
-    fresh.style.color = "#EAB766";
-    baguette.style.right = "calc(0px - 7.5vw)";
-    croissants.style.left = "calc(0px - 7.5vw)";
-    animationText.style.left = "0";
+    startAnimation();
     mediaQuery(x) // Call listener function at run time
     x.addListener(mediaQuery) // Attach listener function on state changes
 }
@@ -55,36 +57,7 @@ function start(){
 
 
 window.addEventListener("load",start);
- console.log("update");
 
-// function reduceLogoWidth(){
-//   setTimeout(scrollToTop, 300);
-//   var logoWidth = window.getComputedStyle(logoCenter).width;
-//   console.log(logoWidth);
-//   var newWidth = parseInt(logoWidth, 10) - 30;
-//   if( newWidth >= 30){
-//   var widthValue = newWidth.toString() + "px";
-//   var updatedWidth = logoCenter.style.width = widthValue;
-// }else{
-//   start();
-// }
-// }
-
-
-// document.addEventListener("scroll", reduceLogoWidth);
-
-
-
-
-
-// document.addEventListener("scroll",function startPage(){
-//     document.removeEventListener("scroll", startPage);
-//     logoCenter.style.display = "none";
-//     navLogo.style.display = "block";
-//     baguette.style.right = "0";
-//     croissants.style.left = "0";
-//     animationText.style.left = "2%";
-// });
 
 function checkDisplay(el){
   return  window.getComputedStyle(el).display;
@@ -98,9 +71,9 @@ burger.addEventListener("click",()=>{
     mobNav.classList.toggle('open-nav');
     if(checkDisplay(mobUl) == "none"){
     setTimeout(showNav, 300);
-}else{
-  mobUl.style.display = "none";
-}
+    }else{
+      mobUl.style.display = "none";
+    }
 });
 
 mobUl.addEventListener("click",()=>{
