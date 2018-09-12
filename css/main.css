@@ -19,6 +19,7 @@ html{
     background: transparent url("../imgs/wood3.jpg") repeat fixed center;
     background-size: cover;
     flex-direction: column;
+    position: relative;
 }
 
 .d-flex{
