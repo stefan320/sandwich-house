@@ -44,8 +44,7 @@ function startAnimation(){
 }
 
 function start(){
-
-    startPage.style.position = "initial";
+    startPage.style.position = "relative";
     scrollToTop();
     containerB.style.paddingTop = "0";
     navLogo.style.display = "inline-block";
