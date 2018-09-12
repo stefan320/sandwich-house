@@ -10,7 +10,7 @@ html{
 
 
 .col-max{
-  max-width: 85vw;
+  width: 85vw;
   margin: 0 auto;
 }
 .top-container{
@@ -35,6 +35,21 @@ html{
   padding-left: 10%;
   padding-right: 10%;
 }
+.bottom-container{
+  display: block;
+  padding: 20px 0;
+}
+.max-100{
+  max-width: 100%;
+}
+.bottom-container > img {
+  padding: 10px 0;
+}
+.desktop-nav-container{
+  justify-content: space-between;
+
+}
+
 /*************************
 ******
 Mobile Nav
@@ -240,13 +255,7 @@ Mobile Start
 .col-text{
     text-align: center;
 }
-.container-flex > img{
- display: block;
- box-sizing: border-box;
- max-width: 100%;
- padding: 0 4px 20px;
- margin: 0 auto;
-}
+
 .parallax-container{
 
   margin: 0 auto;
@@ -380,16 +389,7 @@ footer{
   #nav-logo{
     width: 15%;
   }
-  .container-flex{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  .container-flex > img {
-    max-width: 40%;
-    padding: 0;
-    margin: 0;
-  }
+
   footer{
     flex-direction: row;
     /* padding: 30px 0; */
@@ -402,11 +402,13 @@ footer{
     display: block;
     background-image:  url("../imgs/ciabatta.jpeg");
   }
-
+  .bottom-container{
+    display: none;
+  }
 }
 @media only screen and (min-width: 1000px){
   .col-max{
-    max-width: 90vw;
+    width: 90vw;
   }
   #burger{
     display: none;
@@ -415,6 +417,7 @@ footer{
     width: 120px;
   }
   #desktop-nav{
+    display: initial;
     float: right;
     position: relative;
     z-index: 5;
