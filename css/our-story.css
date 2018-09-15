@@ -1,0 +1,118 @@
+/*********************
+**********************
+*****Base Styles******
+**********************
+*********************/
+html{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Arimo', sans-serif;
+}
+.wrapper{
+  margin: 0 auto;
+}
+
+.padding-l-r{
+  padding: 0 20px;
+}
+
+.col-max{
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.overlay-animation{
+  display: none;
+}
+
+.top-mob-hero{
+  width: 100%;
+}
+.w-100{
+  max-width: 100%;
+
+}
+.mg-0-auto{
+  margin: 0 auto;
+}
+.header-container{
+  text-align: center;
+  margin: 0;
+}
+
+.bg-light-yellow{
+    background-color:  #EEE7D3;
+    margin: -7px auto 0 auto;
+}
+.header-mustard{
+  color: #EAB766;
+  display: block;
+  font-weight: 600;
+}
+.header-padding{
+  padding: 25% 50px;
+}
+
+.h-brown{
+  color: #82564C;
+  font-weight: 400;
+  font-size: 26px;
+  font-family: 'Arimo';
+}
+
+.par{
+  color: #82564C;
+  font-weight: 400;
+  font-family: 'Monserrat';
+  margin: 0;
+  padding: 26px 0 0;
+  font-size: 18px;
+}
+.par:last-child{
+  padding-bottom: 26px;
+}
+
+/*********************
+**********************
+*****MOBILE NAV*******
+**********************
+*********************/
+
+
+.container-lg{
+  background-color: #82564C;
+  width: 100%;
+  background-attachment: fixed;
+}
+#nav-logo{
+  padding: 25px 0;
+  width: 80px;
+}
+
+
+.bottom-hero{
+  height: 300px;
+  max-width: 100%;
+        /* background:  -webkit-linear-gradient(left, rgba(111, 111, 111, 1), transparent, rgba(234,183,102, .6));
+      background:  -o-linear-gradient(left, rgba(000, 111, 111, .7), transparent, rgba(234,183,102, .6));
+      background:  linear-gradient(to right, rgba(000, 000, 000, .4) 5%,
+       transparent 50%, rgba(234,183,102, .6) 20%), */
+      background:  transparent url('../imgs/bottom-hero-sm.jpeg') scroll no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-note{
+  background:  transparent url('../imgs/page-note-mob.jpeg') scroll no-repeat center;
+  height: 400px;
+  background-size: cover;
+  position: relative;
+}
+.special-text{
+  position: absolute;
+  top: 70px;
+  transform: skew(-12deg, 10deg);
+  right: 20px;
+  width: 180px
+}

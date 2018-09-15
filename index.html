@@ -7,19 +7,20 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navbar.css">
   <title>The Sandwich House</title>
   <link rel="shortcut icon"  href="icons/icon1.png"/>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
-
+  <div id="welcome"></div>
     <div id="start-page" class="top-container d-flex">
       <img id="burger" src="icons/burger.svg" alt="open mobile navigation">
           <div id="mob-nav" class="mob-nav">
                 <ul id="mob-ul" class="flex-center">
                   <li><a href="#">HOME</a></li>
-                  <li><a href="#container-b">ABOUT</a></li>
-                  <li><a href="#">OUR STORY</a></li>
+                  <li><a href="html/our story.html">OUR STORY</a></li>
+                  <li><a href="#">ORDER</a></li>
                   <li><a href="#">CONTACT</a></li>
                   <li><a href="#">GALLERY</a></li>
                 </ul>
@@ -29,8 +30,8 @@
           <img id="nav-logo" src="icons/logo2.svg" alt="The sandwich house logo">
         <nav id="desktop-nav">
             <a href="#">HOME</a>
-            <a href="#container-b">ABOUT</a>
-            <a href="#">OUR STORY</a>
+            <a href="html/our story.html">OUR STORY</a>
+            <a href="#">ORDER</a>
             <a href="#">CONTACT</a>
             <a href="#">GALLERY</a>
         </nav>
@@ -126,6 +127,7 @@
   </div>
 </footer>
 <script src="js/main.js"></script>
+<script src="js/nav.js"></script>
 	<script>
     ScrollReveal().reveal('#iconOne',{
        delay: 150,

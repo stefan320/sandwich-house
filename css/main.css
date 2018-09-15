@@ -26,11 +26,6 @@ html{
   display: flex;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 .extra-padding{
   padding-left: 10%;
@@ -355,9 +350,9 @@ footer{
         bottom: 0;
         left: calc(-90% - 8vw);
 }
-      #nav-logo{
+      /* #nav-logo{
         width: 20%;
-      }
+      } */
 }
 
 @media only screen and (min-width: 750px){
@@ -387,9 +382,9 @@ footer{
       bottom: 3%;
   }
 
-  #nav-logo{
+  /* #nav-logo{
     width: 15%;
-  }
+  } */
 
   footer{
     flex-direction: row;
@@ -411,7 +406,7 @@ footer{
   .col-max{
     width: 90vw;
   }
-  #burger{
+  /* #burger{
     display: none;
   }
   #nav-logo{
@@ -422,7 +417,6 @@ footer{
     float: right;
     position: relative;
     z-index: 5;
-    /* padding: 100px 80px 0 0; */
     padding-top: 80px;
   }
   #desktop-nav > a{
@@ -435,7 +429,7 @@ footer{
   #desktop-nav > a:hover{
   font-weight: 900;
   color: #EAB766;
-  }
+  } */
 
   #logo-center{
       width: 25%;
