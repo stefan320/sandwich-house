@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../css/our-story.css">
   <title>The Sandwich House - Our Story</title>
   <link rel="shortcut icon"  href="icons/icon1.png"/>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
 
@@ -53,7 +54,10 @@
           </div>
 
        <div class="container">
-            <div class="bottom-hero">  </div>
+            <div class="bottom-hero">
+                <div class="bottom-hero-filter"></div>
+                <div class="bottom-hero-filter-right"></div>
+             </div>
             <!-- <img class="bottom-hero" src="../imgs/bottom-hero.jpeg" alt="Special bacguete with our homemade sauce served with fries and rucola on the side"> -->
           <div class="bg-light-yellow mg-0-auto">
             <div class="col-max">
@@ -71,5 +75,19 @@
         </div>
     </div>
         <script src="../js/nav.js"></script>
+        <script>
+          ScrollReveal().reveal('.bottom-hero-filter',{
+            distance: "40%",
+            origin: "left",
+             delay: 150,
+             duration: 600
+             });
+          ScrollReveal().reveal('.bottom-hero-filter-right',{
+             distance: "20%",
+             origin: "right",
+             delay: 150,
+             duration: 600
+            });
+        </script>
   </body>
 </html>
