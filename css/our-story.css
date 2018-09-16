@@ -122,13 +122,13 @@ html{
 }
 .skew-text{
   position: absolute;
-  top: 10%;
+  top: 11%;
   transform: skew(-12deg, 10deg);
   left: 34%;
   width: 55%;
   border: 1px solid gold;
 }
 .special-text{
-  margin: 8px 3px;
+  margin: 6px 3px;
   font-size: .9em;
 }
