@@ -22,7 +22,8 @@ html{
   margin: 0 auto;
 }
 
-.overlay-animation{
+.overlay-animation,
+.hands-animation{
   display: none;
 }
 
@@ -36,6 +37,11 @@ html{
 .mg-0-auto{
   margin: 0 auto;
 }
+
+.pastry-image{
+  height: 40vh;
+}
+
 .header-container{
   text-align: center;
   margin: 0;
@@ -53,6 +59,8 @@ html{
 }
 .header-padding{
   padding: 25% 50px;
+  height: 45vh;
+  box-sizing: border-box;
 }
 
 .h-brown{
@@ -87,8 +95,9 @@ html{
   background-attachment: fixed;
 }
 #nav-logo{
-  padding: 20px 0;
+  /* padding: calc(10vh - 50px) 0; */
   width: 75px;
+  height: 15vh;
 }
 
 
