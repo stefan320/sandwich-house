@@ -40,7 +40,7 @@ html{
 }
 
 .pastry-image{
-  height: 40vh;
+  /* height: 40vh; */
 }
 
 .header-container{
@@ -59,9 +59,7 @@ html{
   padding-top: 20px;
 }
 .header-padding{
-  padding: 25% 50px;
-  height: 45vh;
-  box-sizing: border-box;
+  padding: 20% 50px;
 }
 
 .h-brown{
@@ -129,6 +127,6 @@ html{
   border: 1px solid gold;
 }
 .special-text{
-  margin: 6px 3px;
+  margin: 10px 3px;
   font-size: .9em;
 }
