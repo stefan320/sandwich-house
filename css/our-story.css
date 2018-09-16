@@ -120,11 +120,15 @@ html{
   background-size: cover;
   position: relative;
 }
-.special-text{
+.skew-text{
   position: absolute;
-  top: 70px;
+  top: 10%;
   transform: skew(-12deg, 10deg);
-  right: 20px;
-  width: 180px;
+  left: 34%;
+  width: 55%;
   border: 1px solid gold;
+}
+.special-text{
+  margin: 8px 3px;
+  font-size: .9em;
 }
