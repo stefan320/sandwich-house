@@ -122,11 +122,11 @@ html{
   position: absolute;
   top: 11%;
   transform: skew(-12deg, 10deg);
-  left: 34%;
-  width: 55%;
-  border: 1px solid gold;
+  left: 32%;
+  width: 58%;
+  border: 1px solid #FAFAD2;
 }
 .special-text{
-  margin: 10px 3px;
+  margin: 12px 6px;
   font-size: .9em;
 }
