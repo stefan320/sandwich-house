@@ -47,7 +47,7 @@ html{
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: 65%;
+  top: 63%;
   height: 36px;
   width: 100%;
 }
@@ -219,7 +219,8 @@ footer{
 @media only screen and (min-width: 480px){
 
     .rollingpin-string{
-      top: 67%;
+      height: 44px;
+      top: 66%;
     }
 
   .bg-note{
@@ -253,7 +254,8 @@ footer{
 }
 
 .rollingpin-string{
-  top: 68%;
+  height: 42px
+  top: 53%;
 }
 
 .h-brown{
@@ -347,7 +349,7 @@ footer{
 
   .rollingpin-string{
     top: 51%;
-    height: 42px;
+    height: 48px;
   }
 
   .rollingpin-string > h3 {
