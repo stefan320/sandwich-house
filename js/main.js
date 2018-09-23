@@ -19,16 +19,16 @@ const containerB = document.getElementById('container-b');
 
 
 
-function mediaQuery(x) {
-    if (x.matches) { // If media query matches
-        desktopNav.style.display = "inline-block";
-    } else {
-        desktopNav.style.display = "none";
-    }
-}
+// function mediaQuery(x) {
+//     if (x.matches) {
+//         desktopNav.style.display = "inline-block";   // If media query matches
+//     } else {
+//         desktopNav.style.display = "none";
+//     }
+// }
 
 
-const x = window.matchMedia("(min-width: 1000px)")
+// const x = window.matchMedia("(min-width: 1000px)")
 
 
 

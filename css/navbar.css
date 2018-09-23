@@ -3,6 +3,10 @@
 Mobile Nav
 ******
 **************************/
+.top-mob-hero{
+  position: relative;
+}
+
 .flex-center{
     flex-direction: column;
     justify-content: center;
@@ -10,7 +14,7 @@ Mobile Nav
 }
 #burger{
     position: fixed;
-    top: 30px;
+    top: 55px;  /*Container height is 110px */
     right: 7.5%;
     z-index: 22;
     width: 32px;
@@ -32,6 +36,11 @@ Mobile Nav
   width: 100%;
 }
 
+.nav-container{
+  height: 140px;
+  background-color: #82564C;
+  width: 100%;
+}
 
 #mob-ul{
   transition: height 0.6s;
@@ -61,30 +70,34 @@ Mobile Nav
   display: none;
 }
 
-@media only screen and (min-width: 500px){
-  #nav-logo{
-    width: 20%;
-  }
+.nav-brand{
+  position: absolute;
+  top: 30px;
+  left: 7.5%;
+  height: 80px;
 }
+
 @media only screen and (min-width: 750px){
-  #nav-logo{
+  .nav-brand{
     width: 15%;
   }
 }
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 880px){
   #burger{
     display: none;
   }
-  #nav-logo{
-    width: 120px;
+  .nav-brand{
+    left: 5%;
+    width: 130px;
+    height: 110px;
   }
   #desktop-nav{
-    display: initial;
-    float: right;
-    position: relative;
-    z-index: 5;
-    padding-top: 80px;
+    display: inline-block;
+    position: absolute;
+    top: 85px;  /*nav brand heght 110px / 2 = 55px + top spaceing 30px = 85px */
+    right: 5%;
   }
+
   #desktop-nav > a{
     font-weight: 600;
     color: #FFF;

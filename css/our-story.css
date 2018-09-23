@@ -7,9 +7,15 @@ html{
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Raleway', sans-serif;
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Arimo', sans-serif
 }
 .wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hands-overlay{
+  display: none;
   margin: 0 auto;
 }
 
@@ -22,13 +28,34 @@ html{
   margin: 0 auto;
 }
 
-.overlay-animation,
-.hands-animation{
+.overlay-animation{
   display: none;
 }
 
 .top-mob-hero{
+    text-align: center;
+    background: transparent url('../imgs/top-hero.jpeg') scroll no-repeat top;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    height: 50vw;
+}
+
+.rollingpin-string{
+  background-color: rgba(252,210,30, .5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 65%;
+  height: 36px;
   width: 100%;
+}
+
+.rollingpin-string > h3{
+  font-size: 28px;
+  font-weight: 900;
+  color: #82564C;
 }
 
 .w-100{
@@ -37,10 +64,6 @@ html{
 
 .mg-0-auto{
   margin: 0 auto;
-}
-
-.pastry-image{
-  /* height: 40vh; */
 }
 
 .header-container{
@@ -74,12 +97,14 @@ html{
   font-weight: 400;
   font-family: 'Monserrat';
   margin: 0;
-  padding: 26px 0 0;
+  padding: 40px 0  50px;
   font-size: 18px;
 }
-.par:last-child{
-  padding-bottom: 26px;
+.par:first-child{
+  padding: 54px 0  0;
 }
+
+
 
 /*********************
 **********************
@@ -88,41 +113,39 @@ html{
 *********************/
 
 
-.container-lg{
+/* .container-lg{
+  border: 7px solid blue;
   background-color: #82564C;
   width: 100%;
-  background-attachment: fixed;
-}
-#nav-logo{
-  /* padding: calc(10vh - 50px) 0; */
-  width: 75px;
-  height: 15vh;
-}
+} */
+
 
 
 .bottom-hero{
-  height: 300px;
-  max-width: 100%;
-        /* background:  -webkit-linear-gradient(left, rgba(111, 111, 111, 1), transparent, rgba(234,183,102, .6));
-      background:  -o-linear-gradient(left, rgba(000, 111, 111, .7), transparent, rgba(234,183,102, .6));
-      background:  linear-gradient(to right, rgba(000, 000, 000, .4) 5%,
-       transparent 50%, rgba(234,183,102, .6) 20%), */
-      background:  transparent url('../imgs/bottom-hero-sm.jpeg') scroll no-repeat;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  background:  transparent url('../imgs/bottom-hero-sm.jpeg') scroll no-repeat center;
+  height: 0;
+  background-size: contain;
+  padding-top: 80% /* (img-height / img-width * container-width) */
+             /* (672 / 840 * 100) */
 }
+
+.bottom-hero-filter,
+.bottom-hero-filter-right{
+  top: 0;
+  position: absolute;
+  height: 100%;
+}
+
 .bottom-hero-filter{
-  display: inline-block;
+  left: 0;
   width: 40%;
-  height: 293px;
   background: rgba(50 ,19 ,18, .6);
 }
 
 .bottom-hero-filter-right{
-  display: inline-block;
-  float: right;
+  right: 0;
   width: 20%;
-  height: 293px;
   background: rgba(234, 183, 102, .6);
 }
 
@@ -134,13 +157,229 @@ html{
 }
 .skew-text{
   position: absolute;
-  top: 11%;
+  top: 9%;
   transform: skew(-12deg, 10deg);
   left: 32%;
   width: 58%;
-  border: 1px solid #FAFAD2;
+  max-height: 75%;
+  overflow: hidden;
+  color:#3a2824;
+  text-align: justify;
 }
-.special-text{
-  margin: 12px 6px;
-  font-size: .9em;
+
+.extra-text{
+  display: none;
+  margin: 24px 0;
+}
+
+.special-text:first-of-type{
+  font-weight: 900;
+}
+
+/*************************
+******
+ Footer
+*****
+**************************/
+footer{
+  background-color:  #82564C;
+  margin: 0 auto;
+  padding: 26px 0;
+}
+
+.footer-container{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-text > p{
+  margin: 8px 0;
+  font-weight: 100;
+  font-size: 12px;
+  color: #EEE7D3;
+}
+
+.footer-icons{
+  order: -1;
+}
+
+.footer-icons > a{
+  text-decoration: none;
+  color: #EEE7D3;
+}
+.footer-icons > a >img{
+   width: 38px;
+   height: 38px;
+   padding: 6px;
+}
+
+
+@media only screen and (min-width: 480px){
+
+    .rollingpin-string{
+      top: 67%;
+    }
+
+  .bg-note{
+    background:  transparent url('../imgs/page-note-md.jpeg') scroll no-repeat center;
+    background-size: cover;
+    height: 0;
+    padding-top: 106%;
+}
+
+  .skew-text{
+    max-height: 60%;
+    overflow: hidden;
+    width: 42%;
+    left: 50%;
+    top: 14%;
+    margin: 26px 0;
+    font-size: 1.1em;
+  }
+
+.extra-text{
+  display: block;
+}
+
+}
+
+@media only screen and (min-width: 730px){
+
+
+.col-max{
+  max-width: 90%;
+}
+
+.rollingpin-string{
+  top: 68%;
+}
+
+.h-brown{
+  max-width: 500px;
+  line-height: 1.3;
+}
+
+.header-mustard{
+  display: inline;
+}
+
+.header-padding{
+  padding: 10% 0 5% 30%;
+}
+
+.container{
+  display: flex;
+  max-width: 100%;
+  background-color: #EEE7D3;
+  padding-bottom: 30px;
+}
+
+.bottom-hero{
+  padding-top: 0;
+  width: 65%;
+  height: 400px;
+  background-size: cover;
+}
+
+.side-text{
+  width: 35%;
+  text-align: justify;
+  background-color: rgba(234, 183, 102, .7);
+  margin: 0;
+}
+
+.par:first-child{
+  padding: 26px 0 0;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.par{
+  width: 85%;
+  padding: 0 !important;
+  margin: 0 auto;
+  font-size: 16px;
+
+}
+
+.footer-container{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+
+.footer-text{
+  padding: 0;
+  order: -1;
+}
+
+.footer-text > p {
+  display: inline-block;
+}
+
+}
+
+@media only screen and (min-width: 880px){
+
+    .nav-container{
+      display: none;
+      }
+
+  .top-mob-hero{
+    background: transparent url('../imgs/pastry-without-hands.jpg') fixed no-repeat top;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+  }
+
+  .hands-overlay{
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .rollingpin-string{
+    top: 51%;
+    height: 42px;
+  }
+
+  .rollingpin-string > h3 {
+    font-weight: 30px
+  }
+
+  .bottom-hero{
+    width: 75%;
+    height: 480px;
+  }
+
+  .side-text{
+    width: 25%;
+  }
+
+  .bg-note{
+    background:  transparent url('../imgs/page-note.jpeg') scroll no-repeat center;
+    background-size: cover;
+    padding-top: 75%;
+  }
+
+  .skew-text{
+    width: 35%;
+    left: 60%;
+    top: 16%;
+  }
+
+
+  /*************************
+  ******
+  NAV EXTRA
+  *****
+  *************************/
+
 }
