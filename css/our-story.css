@@ -3,108 +3,106 @@
 *****Base Styles******
 **********************
 *********************/
-html{
-    overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Arimo', sans-serif
+html {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Arimo", sans-serif;
 }
-.wrapper{
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.hands-overlay{
+.hands-overlay {
   display: none;
   margin: 0 auto;
 }
 
-.padding-l-r{
+.padding-l-r {
   padding: 0 20px;
 }
 
-.col-max{
+.col-max {
   max-width: 85%;
   margin: 0 auto;
 }
 
-.overlay-animation{
+.overlay-animation {
   display: none;
 }
 
-.top-mob-hero{
-    text-align: center;
-    background: transparent url('../imgs/top-hero.jpeg') scroll no-repeat top;
-    background-size: cover;
-    height: auto;
-    width: 100%;
-    height: 50vw;
+.top-mob-hero {
+  text-align: center;
+  background: transparent url("../imgs/top-hero.jpeg") scroll no-repeat top;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  height: 50vw;
 }
 
-.rollingpin-string{
-  background-color: rgba(252,210,30, .5);
+.rollingpin-string {
+  background-color: rgba(252, 210, 30, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: 63%;
-  height: 36px;
+  top: 62.5%;
+  height: 30px;
   width: 100%;
 }
 
-.rollingpin-string > h3{
-  font-size: 28px;
+.rollingpin-string > h3 {
+  font-size: 22px;
   font-weight: 900;
-  color: #82564C;
+  color: #82564c;
 }
 
-.w-100{
+.w-100 {
   width: 100%;
 }
 
-.mg-0-auto{
+.mg-0-auto {
   margin: 0 auto;
 }
 
-.header-container{
+.header-container {
   text-align: center;
   margin: 0;
 }
 
-.bg-light-yellow{
-    background-color:  #EEE7D3;
-    margin: -7px auto 0 auto;
+.bg-light-yellow {
+  background-color: #eee7d3;
+  margin: -7px auto 0 auto;
 }
-.header-mustard{
-  color: #EAB766;
+.header-mustard {
+  color: #eab766;
   display: block;
   font-weight: 600;
   padding-top: 20px;
 }
-.header-padding{
+.header-padding {
   padding: 20% 50px;
 }
 
-.h-brown{
-  color: #82564C;
+.h-brown {
+  color: #82564c;
   font-weight: 400;
   font-size: 26px;
-  font-family: 'Arimo';
+  font-family: "Arimo";
 }
 
-.par{
-  color: #82564C;
+.par {
+  color: #82564c;
   font-weight: 400;
-  font-family: 'Monserrat';
+  font-family: "Monserrat";
   margin: 0;
-  padding: 40px 0  50px;
+  padding: 40px 0 50px;
   font-size: 18px;
 }
-.par:first-child{
-  padding: 54px 0  0;
+.par:first-child {
+  padding: 54px 0 0;
 }
-
-
 
 /*********************
 **********************
@@ -112,50 +110,49 @@ html{
 **********************
 *********************/
 
-
 /* .container-lg{
   border: 7px solid blue;
   background-color: #82564C;
   width: 100%;
 } */
 
-
-
-.bottom-hero{
+.bottom-hero {
   position: relative;
-  background:  transparent url('../imgs/bottom-hero-sm.jpeg') scroll no-repeat center;
+  background: transparent url("../imgs/bottom-hero-sm.jpeg") scroll no-repeat
+    center;
   height: 0;
   background-size: contain;
-  padding-top: 80% /* (img-height / img-width * container-width) */
-             /* (672 / 840 * 100) */
+  padding-top: 80%; /* (img-height / img-width * container-width) */
+  /* (672 / 840 * 100) */
 }
 
 .bottom-hero-filter,
-.bottom-hero-filter-right{
+.bottom-hero-filter-right {
   top: 0;
   position: absolute;
   height: 100%;
 }
 
-.bottom-hero-filter{
+.bottom-hero-filter {
   left: 0;
   width: 40%;
-  background: rgba(50 ,19 ,18, .6);
+  background: rgba(50, 19, 18, 0.6);
 }
 
-.bottom-hero-filter-right{
+.bottom-hero-filter-right {
   right: 0;
   width: 20%;
-  background: rgba(234, 183, 102, .6);
+  background: rgba(234, 183, 102, 0.6);
 }
 
-.bg-note{
-  background:  transparent url('../imgs/page-note-mob.jpeg') scroll no-repeat center;
+.bg-note {
+  background: transparent url("../imgs/page-note-mob.jpeg") scroll no-repeat
+    center;
   height: 400px;
   background-size: cover;
   position: relative;
 }
-.skew-text{
+.skew-text {
   position: absolute;
   top: 9%;
   transform: skew(-12deg, 10deg);
@@ -163,16 +160,16 @@ html{
   width: 58%;
   max-height: 75%;
   overflow: hidden;
-  color:#3a2824;
+  color: #3a2824;
   text-align: justify;
 }
 
-.extra-text{
+.extra-text {
   display: none;
   margin: 24px 0;
 }
 
-.special-text:first-of-type{
+.special-text:first-of-type {
   font-weight: 900;
 }
 
@@ -181,56 +178,55 @@ html{
  Footer
 *****
 **************************/
-footer{
-  background-color:  #82564C;
+footer {
+  background-color: #82564c;
   margin: 0 auto;
   padding: 26px 0;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.footer-text > p{
+.footer-text > p {
   margin: 8px 0;
   font-weight: 100;
   font-size: 12px;
-  color: #EEE7D3;
+  color: #eee7d3;
 }
 
-.footer-icons{
+.footer-icons {
   order: -1;
 }
 
-.footer-icons > a{
+.footer-icons > a {
   text-decoration: none;
-  color: #EEE7D3;
+  color: #eee7d3;
 }
-.footer-icons > a >img{
-   width: 38px;
-   height: 38px;
-   padding: 6px;
+.footer-icons > a > img {
+  width: 38px;
+  height: 38px;
+  padding: 6px;
 }
 
+@media only screen and (min-width: 480px) {
+  .rollingpin-string {
+    height: 40px;
+    top: 65%;
+  }
 
-@media only screen and (min-width: 480px){
-
-    .rollingpin-string{
-      height: 44px;
-      top: 66%;
-    }
-
-  .bg-note{
-    background:  transparent url('../imgs/page-note-md.jpeg') scroll no-repeat center;
+  .bg-note {
+    background: transparent url("../imgs/page-note-md.jpeg") scroll no-repeat
+      center;
     background-size: cover;
     height: 0;
     padding-top: 106%;
-}
+  }
 
-  .skew-text{
+  .skew-text {
     max-height: 60%;
     overflow: hidden;
     width: 42%;
@@ -240,148 +236,140 @@ footer{
     font-size: 1.1em;
   }
 
-.extra-text{
-  display: block;
+  .extra-text {
+    display: block;
+  }
 }
 
-}
-
-@media only screen and (min-width: 730px){
-
-
-.col-max{
-  max-width: 90%;
-}
-
-.rollingpin-string{
-  height: 42px
-  top: 53%;
-}
-
-.h-brown{
-  max-width: 500px;
-  line-height: 1.3;
-}
-
-.header-mustard{
-  display: inline;
-}
-
-.header-padding{
-  padding: 10% 0 5% 30%;
-}
-
-.container{
-  display: flex;
-  max-width: 100%;
-  background-color: #EEE7D3;
-  padding-bottom: 30px;
-}
-
-.bottom-hero{
-  padding-top: 0;
-  width: 65%;
-  height: 400px;
-  background-size: cover;
-}
-
-.side-text{
-  width: 35%;
-  text-align: justify;
-  background-color: rgba(234, 183, 102, .7);
-  margin: 0;
-}
-
-.par:first-child{
-  padding: 26px 0 0;
-}
-
-.flex-center{
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-}
-
-.par{
-  width: 85%;
-  padding: 0 !important;
-  margin: 0 auto;
-  font-size: 16px;
-
-}
-
-.footer-container{
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+@media only screen and (min-width: 730px) {
+  .col-max {
+    max-width: 90%;
   }
 
+  .rollingpin-string {
+    top: 67%;
+  }
 
-.footer-text{
-  padding: 0;
-  order: -1;
+  .h-brown {
+    max-width: 500px;
+    line-height: 1.3;
+  }
+
+  .header-mustard {
+    display: inline;
+  }
+
+  .header-padding {
+    padding: 10% 0 5% 30%;
+  }
+
+  .container {
+    display: flex;
+    max-width: 100%;
+    background-color: #eee7d3;
+    padding-bottom: 30px;
+  }
+
+  .bottom-hero {
+    padding-top: 0;
+    width: 65%;
+    height: 400px;
+    background-size: cover;
+  }
+
+  .side-text {
+    width: 35%;
+    text-align: justify;
+    background-color: rgba(234, 183, 102, 0.7);
+    margin: 0;
+  }
+
+  .par:first-child {
+    padding: 26px 0 0;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .par {
+    width: 85%;
+    padding: 0 !important;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-text {
+    padding: 0;
+    order: -1;
+  }
+
+  .footer-text > p {
+    display: inline-block;
+  }
 }
 
-.footer-text > p {
-  display: inline-block;
-}
+@media only screen and (min-width: 880px) {
+  .nav-container {
+    display: none;
+  }
 
-}
-
-@media only screen and (min-width: 880px){
-
-    .nav-container{
-      display: none;
-      }
-
-  .top-mob-hero{
-    background: transparent url('../imgs/pastry-without-hands.jpg') fixed no-repeat top;
+  .top-mob-hero {
+    background: transparent url("../imgs/pastry-without-hands.jpg") fixed
+      no-repeat top;
     background-size: cover;
     background-position: center;
     height: auto;
   }
 
-  .hands-overlay{
+  .hands-overlay {
     display: inline-block;
     max-width: 100%;
   }
 
-  .rollingpin-string{
-    top: 51%;
-    height: 48px;
+  .rollingpin-string {
+    top: 50%;
+    height: 42px;
   }
 
   .rollingpin-string > h3 {
-    font-weight: 30px
+    font-size: 32px;
   }
 
-  .bottom-hero{
+  .bottom-hero {
     width: 75%;
     height: 480px;
   }
 
-  .side-text{
+  .side-text {
     width: 25%;
   }
 
-  .bg-note{
-    background:  transparent url('../imgs/page-note.jpeg') scroll no-repeat center;
+  .bg-note {
+    background: transparent url("../imgs/page-note.jpeg") scroll no-repeat
+      center;
     background-size: cover;
     padding-top: 75%;
   }
 
-  .skew-text{
+  .skew-text {
     width: 35%;
     left: 60%;
     top: 16%;
   }
-
 
   /*************************
   ******
   NAV EXTRA
   *****
   *************************/
-
 }
