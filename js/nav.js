@@ -14,6 +14,7 @@ function checkDisplay(el) {
 
 function closeNav() {
   mobUl.style.display = "none";
+  burger.style.transform = "rotate(0deg)";
 }
 
 burger.addEventListener("click", () => {
@@ -22,7 +23,6 @@ burger.addEventListener("click", () => {
     setTimeout(showNav, 300);
     burger.style.transform = "rotate(90deg)";
   } else {
-    burger.style.transform = "rotate(0deg)";
     closeNav();
   }
 });

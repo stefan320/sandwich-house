@@ -95,7 +95,7 @@ Mobile Start
   font-size: 38px;
   max-width: 60%;
   position: absolute;
-  z-index: 6;
+  z-index: 3;
   left: calc(-60% - 8vw);
   top: 35%;
   margin: 0;
