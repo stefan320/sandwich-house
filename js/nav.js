@@ -12,16 +12,22 @@ function checkDisplay(el) {
   return window.getComputedStyle(el).display;
 }
 
+function closeNav() {
+  mobUl.style.display = "none";
+}
+
 burger.addEventListener("click", () => {
   mobNav.classList.toggle("open-nav");
   if (checkDisplay(mobUl) == "none") {
     setTimeout(showNav, 300);
+    burger.style.transform = "rotate(90deg)";
   } else {
-    mobUl.style.display = "none";
+    burger.style.transform = "rotate(0deg)";
+    closeNav();
   }
 });
 
 mobUl.addEventListener("click", () => {
   mobNav.classList.remove("open-nav");
-  mobUl.style.display = "none";
+  closeNav();
 });

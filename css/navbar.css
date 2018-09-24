@@ -3,46 +3,46 @@
 Mobile Nav
 ******
 **************************/
-.top-mob-hero{
+.top-mob-hero {
   position: relative;
 }
 
-.flex-center{
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+.flex-center {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
-#burger{
-    position: fixed;
-    top: 40px;  /*Container height is 110px */
-    right: 7.5%;
-    z-index: 22;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
+#burger {
+  position: fixed;
+  top: 40px; /*Container height is 110px */
+  right: 7.5%;
+  z-index: 5;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
 
-#mob-nav{
+#mob-nav {
   margin: 0;
-  background-color: rgba(000, 000, 000, .9);
+  background-color: rgba(000, 000, 000, 0.9);
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 4;
   text-align: center;
   font-size: 28px;
   padding: 0;
-  transition: height .4s;
+  transition: height 0.4s;
   height: 0;
   width: 100%;
 }
 
-.nav-container{
+.nav-container {
   height: 110px;
-  background-color: #82564C;
+  background-color: #82564c;
   width: 100%;
 }
 
-#mob-ul{
+#mob-ul {
   transition: height 0.6s;
   height: 100%;
   padding: 0;
@@ -51,63 +51,62 @@ Mobile Nav
   display: none;
 }
 
-#mob-ul li  {
-    padding: 15px 0;
+#mob-ul li {
+  padding: 15px 0;
 }
 #mob-ul li a {
-    text-decoration: none;
-    color: #EAB766;
-    font-weight: 300;
+  text-decoration: none;
+  color: #eab766;
+  font-weight: 300;
 }
-#mob-ul  a:hover{
-    font-weight: 900;
+#mob-ul a:hover {
+  font-weight: 900;
 }
-.open-nav{
+.open-nav {
   width: 100%;
   height: 100% !important;
 }
-#desktop-nav{
+#desktop-nav {
   display: none;
 }
 
-.nav-brand{
+.nav-brand {
   position: absolute;
   top: 15px;
   left: 7.5%;
   height: 80px;
 }
 
-@media only screen and (min-width: 750px){
-  .nav-brand{
+@media only screen and (min-width: 750px) {
+  .nav-brand {
     width: 10%;
   }
 }
-@media only screen and (min-width: 880px){
-  #burger{
+@media only screen and (min-width: 880px) {
+  #burger {
     display: none;
   }
-  .nav-brand{
+  .nav-brand {
     left: 5%;
     width: 130px;
     height: 110px;
   }
-  #desktop-nav{
+  #desktop-nav {
     display: inline-block;
     position: absolute;
-    top: 85px;  /*nav brand heght 110px / 2 = 55px + top spaceing 30px = 85px */
+    top: 85px; /*nav brand heght 110px / 2 = 55px + top spaceing 30px = 85px */
     right: 5%;
   }
 
-  #desktop-nav > a{
+  #desktop-nav > a {
     font-weight: 600;
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
     padding-left: 30px;
     width: 100%;
   }
-  #desktop-nav > a:hover{
-  font-weight: 900;
-  color: #EAB766;
+  #desktop-nav > a:hover {
+    font-weight: 900;
+    color: #eab766;
   }
-
 }
