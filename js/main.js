@@ -44,8 +44,6 @@ function start() {
   containerB.style.paddingTop = "0";
   // navLogo.style.display = "inline-block";
   startAnimation();
-  mediaQuery(x); // Call listener function at run time
-  x.addListener(mediaQuery); // Attach listener function on state changes
 }
 
 window.addEventListener("load", start);

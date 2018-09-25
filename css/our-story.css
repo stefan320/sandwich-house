@@ -42,7 +42,7 @@ html {
 }
 
 .rollingpin-string {
-  background-color: rgba(252, 210, 30, 0.5);
+  background-color: rgba(252, 210, 30, 0.4);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,7 +206,7 @@ footer {
   text-decoration: none;
   color: #eee7d3;
 }
-.footer-icons > a > img {
+.footer-icons > a > svg {
   width: 38px;
   height: 38px;
   padding: 6px;
@@ -288,7 +288,7 @@ footer {
     padding: 26px 0 0;
   }
 
-  .flex-center {
+  .justify-evenly {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;

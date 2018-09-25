@@ -75,11 +75,17 @@ Mobile Nav
   top: 15px;
   left: 7.5%;
   height: 80px;
+  width: 92px;
 }
 
 @media only screen and (min-width: 750px) {
   .nav-brand {
     width: 10%;
+    left: 5%;
+  }
+
+  #burger {
+    right: 5%;
   }
 }
 @media only screen and (min-width: 880px) {
