@@ -1,0 +1,334 @@
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*************************
+******
+Nav bar custom styles
+******
+**************************/
+.nav-container {
+  height: 140px;
+  opacity: 0.8;
+}
+
+/*************************
+******
+Hero styles
+******
+**************************/
+
+.top-mob-hero {
+  background: transparent url("../imgs/healty-breakfast-hero.jpg") fixed
+    no-repeat top;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 14%;
+  background-color: #eee7d3;
+  position: absolute;
+  bottom: 20%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay-header {
+  font-size: 50px;
+  color: #82564c;
+}
+
+/*************************
+******
+Select styles
+******
+**************************/
+.order-section {
+  max-width: 100%;
+  background-color: #eab766;
+  text-align: center;
+}
+
+.selection-header {
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+  padding: 50px 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: 50px;
+  margin-bottom: 30px;
+  color: #eab766;
+  background-color: #82564c;
+  background-repeat: no-repeat;
+  background-position: left top, 95% center;
+}
+
+.bread-select {
+  background-image: url("../icons/bread-type.svg"),
+    url("../icons/select-arrow.svg");
+  padding-left: 40%;
+}
+
+.sauces-select {
+  background-image: url("../icons/sauces.svg"), url("../icons/select-arrow.svg");
+  padding-left: 45%;
+}
+
+.side-dishes-select {
+  background-image: url("../icons/side-dishes.svg"),
+    url("../icons/select-arrow.svg");
+  padding-left: 40%;
+}
+.drinks-select {
+  background-image: url("../icons/drinks.svg"), url("../icons/select-arrow.svg");
+  padding-left: 45%;
+}
+.toasted-select {
+  background-image: url("../icons/toast.svg"), url("../icons/select-arrow.svg");
+  padding-left: 45%;
+}
+
+.toasted-select {
+  margin-bottom: 0;
+}
+/*************************
+******
+button styles
+******
+**************************/
+.order-nav {
+  padding: 35px 0;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0;
+}
+.submit-order {
+  background-color: #ddc397;
+  width: 50%;
+  margin: 20px auto;
+}
+.pd-x-10 {
+  padding: 0 20px;
+}
+/*************************
+******
+FORM STYLES
+******
+**************************/
+
+.input {
+  width: 47%;
+  background-color: #ddc397;
+  border: none;
+  margin: 6px auto;
+  padding: 12px 0;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 0.8rem;
+  color: #82564c;
+  font-weight: 700;
+  padding: 0 7px;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 0.8rem;
+  color: #82564c;
+  font-weight: 700;
+  padding: 0 7px;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 0.8rem;
+  color: #82564c;
+  font-weight: 700;
+  padding: 0 7px;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 0.8rem;
+  color: #82564c;
+  font-weight: 700;
+  padding: 0 7px;
+}
+
+fieldset {
+  text-align: left;
+  background-color: #82564c;
+  width: 90%;
+  margin: 30px auto;
+  padding: 0;
+}
+
+/*************************
+******
+CONTACT STYLES
+******
+**************************/
+.bg-container {
+  height: 90vh;
+  width: 100%;
+  background: #2d7e9b url("../imgs/contact-bg.jpeg") fixed no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.h-white {
+  color: #fff;
+}
+
+.h-mustard {
+  color: #eab766;
+  display: inline-block;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eab766;
+  margin: 35px auto;
+}
+
+.contact-info {
+  justify-content: space-between;
+  height: 80px;
+}
+
+.contact-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.bg-rgba-blue {
+  background-color: rgba(45, 126, 155, 0.85);
+  height: 25%;
+}
+
+.bg-blue {
+  background-color: #2d7e9b;
+  height: 218px; /* 35px + 35px header margin + 33px header including padding and border + 80px content-info height + 35px space below content-info*/
+  width: 100%;
+  text-align: center;
+}
+
+/*************************
+******
+CONTACT FORM
+******
+**************************/
+
+.form-contact {
+  width: 100%;
+  height: 45vh;
+  background: url("../imgs/pastry-bg.jpg") scroll no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.form-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.contact-submit {
+  width: 40%;
+  margin: 6px auto;
+}
+
+textarea {
+  margin: 6px auto;
+  width: 54%;
+  background-color: #ddc397;
+}
+
+.form-contact .input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #2d7e9b;
+}
+
+/*************************
+******
+ Footer
+*****
+**************************/
+footer {
+  background-color: #82564c;
+  margin: 0 auto;
+  padding: 26px 0;
+}
+
+.footer-container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-text > p {
+  margin: 8px 0;
+  font-weight: 100;
+  font-size: 12px;
+  color: #eee7d3;
+}
+
+.footer-icons {
+  order: -1;
+}
+
+.footer-icons > a {
+  text-decoration: none;
+  color: #eee7d3;
+}
+.footer-icons > a > svg {
+  width: 38px;
+  height: 38px;
+  padding: 6px;
+}
+
+@media only screen and (min-width: 730px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-text {
+    padding: 0;
+    order: -1;
+  }
+
+  .footer-text > p {
+    display: inline-block;
+  }
+}

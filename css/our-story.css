@@ -8,6 +8,7 @@ html {
   font-family: "Montserrat", sans-serif;
   font-family: "Raleway", sans-serif;
   font-family: "Arimo", sans-serif;
+  background-image: url(../imgs/wood3.jpg);
 }
 .wrapper {
   max-width: 1250px;
@@ -102,6 +103,10 @@ html {
 }
 .par:first-child {
   padding: 54px 0 0;
+}
+
+.pd-x-20 {
+  padding: 0 20px;
 }
 
 /*********************
@@ -247,7 +252,7 @@ footer {
   }
 
   .rollingpin-string {
-    top: 67%;
+    top: 68%;
   }
 
   .h-brown {

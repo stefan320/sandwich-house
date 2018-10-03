@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Image Gallery</title>
+    <script src="picturefill.js" async></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand w-25"><img class="col-md-8 col-lg-4 no-gutters" src="../icons/logo2.svg" alt="The Sandwich House branding logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active pl-3 pr-1">
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item px-1">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item dropdown px-1">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menu
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item px-1">
+        <a class="nav-link disabled" href="#">Other</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-search my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!--End OF NAV  -->
+
+<div class="wrapper">
+  <div class="container bg-custom-blue">
+    <h2 class="text-center pt-5 pb-4">The Responsive Gallery</h2>
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-4 p-2">
+         <img   srcset="images/waiterM.jpeg 1280w,
+                        images/waiter.jpg 600w"
+                src="images/waiter.jpg"
+                alt="Waiter serving food"
+                class="img-fluid"/>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 p-2">
+          <img class="img-fluid" src="images/romantic.jpg" alt="A couple enjoying a romantic dinner at our restaurant">
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 p-2">
+          <img class="img-fluid" src="images/nibbles.jpg" alt="Tasty nibbles to share">
+        </div>
+      <!-- </div>   -->  <!-- End of row 1-->
+        <!-- <div class="row"> -->
+            <div class="col-12 col-md-6 col-xl-4 p-2">
+                <img class="img-fluid" src="images/pasta-rucola-salad.jpg" alt="Fresh pasta with rucola">
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 p-2">
+                <img class="img-fluid" src="images/fish.jpg" alt="Fresh fillet of fish">
+            </div>
+        <!-- </div>  -->   <!-- End of row 2-->
+      <!-- <div class="row"> -->
+              <div class="col-12 col-md-6 col-xl-4 p-2">
+                  <img class="img-fluid" src="images/chill.jpg" alt="Friends enjoying wine">
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 p-2">
+                  <img class="img-fluid" src="images/beef.jpg" alt="Argentinian beef fillet">
+              </div>
+              <div class="col-12 col-md-6 col-xl-4 p-2">
+                  <img class="img-fluid" src="images/nibbles.jpg" alt="Waiter serving food">
+              <!-- </div> -->
+        </div>  <!-- End of row 3-->
+      </div>  <!-- End of container -->
+    </div> <!-- End of wrapper -->
+    <div id="slider" class="">
+        <img id="setSrc" src="" alt="Current Image">
+        <div class="arrow" id="arrow-left">
+          <!-- Arrow shape in css  -->
+        </div>
+        <div class="arrow" id="arrow-right">
+          <!-- Arrow shape in css  -->
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script src="gallery.js"></script>
+  </body>
+</html>

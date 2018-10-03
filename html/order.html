@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
+      <link rel="stylesheet" href="../css/normalize.css">
+      <link rel="stylesheet" href="../css/navbar.css">
+      <link rel="stylesheet" href="../css/order.css">
+      <title>The Sandwich House</title>
+      <link rel="shortcut icon"  href="icons/icon1.png"/>
+      <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+   </head>
+   <body>
+
+     
+     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+       <symbol id="facebook" viewBox="0 0 63.8 76">
+         <path fill="#EEE6D2" d="M36.7,68.5c0-0.2,0-0.4,0-0.7c0-8.9,0-17.8,0-26.7v-0.4c0.1,0,0.3,0,0.4,0c2.8,0,5.6,0,8.4,0
+         	c0.6,0,0.6,0,0.6-0.6c0.2-1.5,0.4-3,0.6-4.5c0.2-1.8,0.5-3.6,0.7-5.4c0.1-0.4,0-0.4-0.4-0.4c-3.3,0-6.6,0-9.9,0h-0.4
+         	c0-0.1,0-0.2,0-0.2c0-2.3,0-4.6,0-6.8c0-0.6,0.1-1.3,0.2-1.9c0.3-1.5,1.2-2.5,2.7-2.9c0.8-0.2,1.6-0.3,2.4-0.3c1.8,0,3.6,0,5.4,0
+         	c0.3,0,0.4-0.1,0.4-0.4c0-1.6,0-3.3,0-4.9c0-1.4,0-2.8,0-4.2c0-0.2-0.1-0.3-0.3-0.3c-0.4,0-0.9-0.1-1.3-0.1c-2.4-0.1-4.7-0.2-7-0.2
+         	c-2.1,0-4,0.3-6,1.1c-2.8,1.2-4.9,3.2-6.3,5.9c-1,2-1.4,4.2-1.5,6.5c0,2.8,0,5.6,0,8.4c0,0.1,0,0.2,0,0.3c-0.2,0-0.3,0-0.4,0
+         	c-2.9,0-5.8,0-8.6,0c-0.3,0-0.4,0.1-0.4,0.4c0,3.4,0,6.7,0,10.1c0,0.4,0,0.4,0.4,0.4c2.9,0,5.7,0,8.6,0h0.4c0,0.1,0,0.2,0,0.3
+         	c0,9,0,18,0,27c0,0.1,0,0.3,0,0.4"/>
+       </symbol>
+
+       <symbol id="twitter" viewBox="0 0 72 76">
+         <path fill="#EEE6D2" d="M60.6,25.5c0,0.5,0,1.1,0,1.6c0,16.8-12.8,36.1-36.1,36.1c-7.2,0-13.8-2.1-19.5-5.7c1,0.1,2,0.2,3,0.2
+         	c5.9,0,11.4-2,15.8-5.4c-5.6-0.1-10.3-3.8-11.9-8.8c0.8,0.2,1.6,0.2,2.4,0.2c1.2,0,2.3-0.2,3.3-0.4C11.8,42,7.5,37,7.5,30.8
+         	c0-0.1,0-0.1,0-0.2c1.7,0.9,3.7,1.5,5.8,1.6C9.8,29.9,7.5,26,7.5,21.5c0-2.3,0.6-4.5,1.7-6.4c6.3,7.7,15.6,12.7,26.2,13.3
+         	c-0.2-0.9-0.3-1.9-0.3-2.9c0-7,5.7-12.7,12.7-12.7c3.7,0,7,1.5,9.3,4c2.9-0.6,5.6-1.6,8.1-3.1c-1,3-3,5.5-5.6,7c2.6-0.3,5-1,7.3-2
+         	C65.3,21.4,63.1,23.6,60.6,25.5z"/>
+       </symbol>
+
+       <symbol id="instagram" viewBox="0 0 72 76">
+         <path fill="#EEE6D2" d="M19.8,10.5h0.6c0.3,0.1,0.4,0.3,0.4,0.6c0,0.1,0,0.2,0,0.3c0,1.7,0,3.4,0,5.1c0,1.9,0,3.8,0,5.7
+       		c0,0.5,0,1,0,1.6c0,0.3,0.1,0.5,0.4,0.5c0.4,0,0.9,0,1.3-0.1c0.2,0,0.4-0.2,0.4-0.4c0-0.2,0-0.3,0-0.5c0-0.6,0-1.2,0-1.8
+       		c0-3.4,0-6.8,0-10.3c0-0.4,0-0.5,0.4-0.6h24.9c0.1,0,0.1,0,0.2,0c1.5,0,3,0,4.4,0c0.7,0,1.5,0.1,2.2,0.3c2.3,0.6,4.2,1.8,5.7,3.5
+       		c1.2,1.4,2,3.1,2.4,4.9c0.2,1,0.2,2,0.2,3c0,2,0,3.9,0,5.9c0,0.3-0.1,0.4-0.4,0.4c-0.1,0-0.1,0-0.2,0c-5.4,0-10.9,0-16.3,0
+       		c-0.4,0-0.6-0.1-0.9-0.4c-0.7-0.7-1.5-1.3-2.4-1.8c-3-1.8-6.3-2.5-9.8-1.8c-2.7,0.5-5.1,1.7-7.1,3.6c-0.3,0.2-0.6,0.4-0.9,0.4
+       		c-5.5,0-11,0-16.4,0c-0.3,0-0.4-0.1-0.4-0.4c0-0.5,0-1,0-1.5c0-2.1-0.1-4.1,0.1-6.2C8.7,19.1,9,18,9.5,16.9c0.8-1.7,2-3.1,3.5-4.3
+       		h0.1c0,0,0,0,0,0.1c0,3.3,0,6.5,0,9.8c0,0.5,0,0.9,0,1.4c0,0.3,0.1,0.4,0.4,0.4c0.4,0,0.8,0,1.2-0.1c0.3,0,0.4-0.2,0.4-0.5
+       		c0-0.2,0-0.3,0-0.5c0-3.7,0-7.4,0-11.1c0-0.1,0-0.2,0-0.2c-0.1-0.4,0-0.4,0.3-0.6c0.3-0.2,0.7-0.3,1-0.3c0.3,0,0.3,0.1,0.3,0.3
+       		c0,0.1,0,0.2,0,0.3c0,3.3,0,6.7,0,10c0,0.7,0,1.5,0,2.2c0,0.3,0.1,0.5,0.4,0.5c0.4,0,0.8,0,1.2,0s0.5-0.2,0.6-0.6
+       		c0-0.2,0-0.4,0-0.6c0-2,0-3.9,0-5.9c0-1.9,0-3.9,0-5.8C19.3,10.6,19.4,10.5,19.8,10.5 M49.3,19.6L49.3,19.6c0,1,0,2,0,3.1
+       		c0,1,0.7,1.7,1.7,1.7c1.9,0,3.9,0,5.8,0c1,0,1.7-0.7,1.7-1.7c0-2,0-4,0-5.9c0-1-0.7-1.7-1.7-1.7c-1.9,0-3.9,0-5.8,0
+       		c-1,0-1.7,0.7-1.7,1.7C49.2,17.6,49.3,18.6,49.3,19.6"/>
+       	<path fill="#EEE6D2" d="M24.7,30c-2.1,3.2-3,6.6-2.4,10.4c0.5,3.3,2,6.1,4.6,8.3c5.1,4.4,12.3,4.7,17.6,0.7c3-2.3,4.8-5.3,5.4-9
+       		c0.6-3.7-0.3-7.1-2.4-10.3h0.2c4.5,0,9.1,0,13.6,0c0.5,0,1,0,1.5,0c0.1,0,0.2,0,0.3,0c0.2,0,0.4,0.1,0.4,0.4s0,0.6,0,0.9
+       		c0,2.3,0,4.6,0,6.8c0,5.6,0,11.1,0,16.7c0,2.7-1,5.1-2.8,7.1c-1.6,1.8-3.6,2.9-6,3.3c-0.6,0.1-1.2,0.2-1.8,0.2
+       		c-11.1,0-22.3,0-33.4,0c-5,0-9.2-3.4-10.4-8.1c-0.2-1-0.3-1.9-0.3-2.9c0-5.2,0-10.4,0-15.5c0-2.7,0-5.3,0-7.9c0-0.1,0-0.2,0-0.4
+       		c0-0.3,0.2-0.5,0.5-0.5c0.4,0,0.7,0,1.1,0c4.7,0,9.4,0,14.2,0h0.1V30z"/>
+       	<path fill="#EEE6D2" d="M36.2,27.5c6,0,10.8,4.8,10.8,10.8S42.2,49,36.2,49s-10.8-4.8-10.8-10.8C25.3,32.2,30.2,27.5,36.2,27.5
+       		 M44.1,38.4c0-4.4-3.4-8.1-8.1-8.1c-4.4,0.1-8,3.7-7.8,8.1c0.1,4.4,3.7,7.9,8.2,7.8C40.6,46,44.2,42.5,44.1,38.4"/>
+       </symbol>
+
+
+      <!-- End of nav-container -->
+      <div class="top-mob-hero">
+        <div id="start-page" class="nav-container">
+           <img id="burger" src="../icons/burger.svg" alt="open mobile navigation">
+           <div class="hero-overlay"><h2 class="overlay-header">My Sandwich</h2></div>
+        </div>
+      </div>
+      <div id="mob-nav" class="mob-nav">
+         <ul id="mob-ul" class="flex-center">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="html/our-story.html">OUR STORY</a></li>
+            <li><a href="#">ORDER</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">GALLERY</a></li>
+         </ul>
+      </div>
+      <!-- End of mob-nav div -->
+      <img id="nav-logo" class="nav-brand" src="../icons/logo2.svg" alt="The sandwich house logo">
+      <nav id="desktop-nav">
+         <a href="../index.html">HOME</a>
+         <a href="html/our-story.html">OUR STORY</a>
+         <a href="#">ORDER</a>
+         <a href="#">CONTACT</a>
+         <a href="#">GALLERY</a>
+      </nav>
+
+      <section class="order-section">
+        <h2 class="selection-header">Choose your...</h2>
+        <div class="select-container">
+
+          <select class="bread-select" name="bread-type">
+              <option selected disabled>Bread Type</option>
+              <option value="baguette" data-price="0.8">Baguette</option>
+              <option value="burger bun" data-price="0.8">Burger Bun</option>
+              <option value="ciabatta" data-price="0.8">Ciabatta</option>
+              <option value="focaccia" data-price="0.8">Focaccia</option>
+              <option value="ftira" data-price="0.8">Ftira</option>
+              <option value="olive bread" data-price="0.8">Olive Bread</option>
+              <option value="rye bread" data-price="0.6">Rye Bread</option>
+              <option value="sliced bread" data-price="0.8">Sliced Bread</option>
+              <option value="tortilla" data-price="0.8">Tortilla</option>
+              <option value="wheat bread" data-price="0.8">Wheat Bread</option>
+              <option value="whole grain bread" data-price="0.8">Whole Grain Bread</option>
+          </select>
+
+
+<fieldset>
+    <legend>Choose your favourite ingredients</legend>
+
+    <div>
+        <input type="checkbox" id="bacon" name="bacon"
+               value="1.00" />
+        <label for="bacon">Bacon</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="beef" name="Beef"
+               value="1.50"/>
+        <label for="beef">Beef</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="carrot" name="carrot"
+               value="0.50"/>
+        <label for="carrot">Carrot</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="cucamber" name="cucamber"
+               value=".25"/>
+        <label for="cucamber">Cucamber</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="duck" name="Duck"
+               value="1.75"/>
+        <label for="duck">Duck</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="chicken" name="Grilled Chicken"
+               value="2.00"/>
+        <label for="chicken">Grilled Chicken</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="ham" name="Ham"
+               value=".5"/>
+        <label for="ham">Ham</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="lettuce" name="Lettuce"
+               value="0"/>
+        <label for="lettuce">Lettuce</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="mushroom" name="Mushrooms"
+               value=".5"/>
+        <label for="mushroom">Mushrooms</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="olives" name="Olives"
+               value=".3"/>
+        <label for="olives">Olives</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="pork" name="Pork"
+               value="2.00"/>
+        <label for="pork">Pork</label>
+    </div>
+
+
+    <div>
+        <input type="checkbox" id="fried-egg" name="Fried Eggs"
+               value=".50"/>
+        <label for="fried-egg">Fried Eggs</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="hard-boiled-egg" name="Hard Boiled Egg"
+               value=".5" />
+        <label for="hard-boiled-egg">Hard Boiled Egg</label>
+    </div>
+
+</fieldset>
+
+          <select class="sauces-select" name="sauce-select">
+              <option selected disabled>Sauces</option>
+              <option value="chilli sauce"  data-price="0.25">Chilli Sauce</option>
+              <option value="garlic and olive oil" data-price="0.35">Garlic and Olive Oil</option>
+              <option value="ketchup" data-price="0.20">Ketchup</option>
+              <option value="mayonnaise" data-price="0.20">Mayonnaise</option>
+              <option value="garlic basil mayo" data-price="0.35">Garlic Basil Mayo</option>
+              <option value="mustard" data-price="0.20">Mustard</option>
+          </select>
+
+          <select class="side-dishes-select" name="side-dishes-select">
+              <option selected disabled>Side Dishes</option>
+              <option value="coleslaw" data-price="1.20">Coleslaw</option>
+              <option value="curly fries" data-price="1.8">Curly Fries</option>
+              <option value="mixed salad" data-price="2.8">Mixed Salad</option>
+              <option value="potato wedges" data-price="1.8">Potato Wedges</option>
+              <option value="potato salad" data-price="2.2">Potatoes Salad</option>
+              <option value="sliced potatoes fries" data-price="1.8">Sliced Potatoes Fries</option>
+              <option value="sweet potatoes fries" data-price="2.8">Sweet Potatoes Fries</option>
+          </select>
+
+          <select class="drinks-select" name="drinks-select">
+              <option selected disabled>Drinks</option>
+              <option value="Still Water" data-price="0.8">Still Water</option>
+              <option value="Fizzy Water" data-price="0.8">Fizzy Water</option>
+              <option value="coca cola" data-price="1.7">Coca Cola</option>
+              <option value="sprite" data-price="1.7">Sprite</option>
+              <option value="fanta" data-price="1.7">Fanta</option>
+              <option value="kinnie" data-price="1.7">Kinnie</option>
+              <option value="cisk" data-price="1.9">Cisk</option>
+          </select>
+
+          <select class="toasted-select" name="toasted-select">
+              <option selected disabled>Toasted</option>
+              <option value="yes" data-price="0.30">Yes</option>
+              <option value="no" data-price="0">No</option>
+          </select>
+        </div>
+
+        <div class="order-nav">
+          <button type="button" class="btn pd-x-10"><img id="add-sandwich" class="icon-small" src="../icons/add-sign.svg" alt="Add sandwich to order"></button>
+          <button type="button" class="btn pd-x-10"><img id="confirm=-order" class="icon-small" src="../icons/confirm-sign.svg" alt="Add sandwich to order"></button>
+        </div>
+
+        <form class="form" action="#">
+          <input class="input" type="text" name="name"  placeholder="NAME">
+          <input class="input" type="text" name="surname"  placeholder="SURNAME">
+          <input class="input" type="text" name="address"  placeholder="ADDRESS">
+          <input class="input" type="text" name="mobile"  placeholder="MOBILE">
+          <input class="input" type="text" name="email"  placeholder="EMAIL ADDRESS">
+          <input class="input" type="text" name="time-of-delivery"  placeholder="TIME OF DELIVERY">
+         <button class="btn submit-order" type="submit"><img src="../icons/submit-sm.svg" alt="Submit order"></button>
+        </form>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="bg-container">
+          <div class="bg-rgba-blue flex-center">
+            <h2 class="h-white">LET'S  TALK</h2>
+          </div>
+
+        </div>
+        <div class="bg-blue">
+          <h2 class="h-mustard">WE'D LOVE TO HEAR FROM YOU</h2>
+          <div class="contact-info flex-center">
+            <a class="contact-link" href="info@thesandwichhouse.com">info@thesandwichhouse.com</a>
+            <a class="contact-link" href="tel:21110000">T: 21 11 00 00</a>
+            <a class="contact-link" href="tel:99110000">M: 99 11 00 00</a>
+          </div>
+        </div>
+
+        <div class="form-contact">
+          <form class="form-contact" action="index.html" method="post">
+            <input class="input" type="text" name="name"  placeholder="NAME">
+            <input class="input" type="text" name="surname"  placeholder="SURNAME">
+            <input class="input" type="text" name="email"  placeholder="EMAIL ADDRESS">
+            <input class="input" type="text" name="subject"  placeholder="SUBJECT">
+            <textarea name="message" class="textarea" placeholder="MESSAGE" ></textarea>
+            <button type="submit" class="contact-submit btn"><img src="../icons/submit-lg.svg" alt="Submit order"></button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+         <div class="footer-container col-max">
+            <div class="footer-text">
+               <p>&copy; 2018 | The Sandwich House |</p>
+               <p>All rights reserved | Stefan Cutajar</p>
+            </div>
+            <div class="footer-icons">
+
+               <a href="https://www.facebook.com/" target="_blank">
+                <svg>
+                  <use xlink:href="#facebook"></use>
+                </svg>
+               </a>
+
+               <a href="https://www.twitter.com/" target="_blank">
+                 <svg>
+                   <use xlink:href="#twitter"></use>
+                 </svg>
+                </a>
+
+               <a href="https://www.instagram.com/" target="_blank">
+                 <svg>
+                   <use xlink:href="#instagram"></use>
+                 </svg>
+               </a>
+
+            </div>
+         </div>
+      </footer>
+
+    <script src="../js/order.js"></script>
+    <script src="../js/nav.js"></script>
+  </body>
+</html>
