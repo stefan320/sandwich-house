@@ -1,6 +1,7 @@
 var selectBread = document.querySelectorAll(".bread-select");
 var sauceSelect = document.querySelectorAll(".sauces-select");
 var itemSelect = document.querySelectorAll("select");
+var option = document.querySelectorAll("option");
 
 var Sandwich = function(bread, sauce, sideDish, drink, toasted) {
   this.bread = bread;
