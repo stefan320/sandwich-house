@@ -67,20 +67,18 @@
       <div id="mob-nav" class="mob-nav">
          <ul id="mob-ul" class="flex-center">
             <li><a href="../index.html">HOME</a></li>
-            <li><a href="html/our-story.html">OUR STORY</a></li>
+            <li><a href="our-story.html">OUR STORY</a></li>
             <li><a href="#">ORDER</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">GALLERY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
          </ul>
       </div>
       <!-- End of mob-nav div -->
       <img id="nav-logo" class="nav-brand" src="../icons/logo2.svg" alt="The sandwich house logo">
       <nav id="desktop-nav">
          <a href="../index.html">HOME</a>
-         <a href="html/our-story.html">OUR STORY</a>
+         <a href="our-story.html">OUR STORY</a>
          <a href="#">ORDER</a>
-         <a href="#">CONTACT</a>
-         <a href="#">GALLERY</a>
+         <a href="#contact">CONTACT</a>
       </nav>
 
       <section class="order-section">
@@ -231,13 +229,13 @@
           <button type="button" class="btn pd-x-10"><img id="confirm=-order" class="icon-small" src="../icons/confirm-sign.svg" alt="Add sandwich to order"></button>
         </div>
 
-        <form class="form" action="#">
+        <form class="form col-max" action="#">
           <input class="input" type="text" name="name"  placeholder="NAME">
           <input class="input" type="text" name="surname"  placeholder="SURNAME">
-          <input class="input" type="text" name="address"  placeholder="ADDRESS">
-          <input class="input" type="text" name="mobile"  placeholder="MOBILE">
-          <input class="input" type="text" name="email"  placeholder="EMAIL ADDRESS">
-          <input class="input" type="text" name="time-of-delivery"  placeholder="TIME OF DELIVERY">
+          <input class="input flex-grow" type="text" name="address"  placeholder="ADDRESS">
+          <input class="input flex-order" type="text" name="mobile"  placeholder="MOBILE">
+          <input  class="input flex-grow" type="text" name="email"  placeholder="EMAIL ADDRESS">
+          <input class="input flex-order" type="text" name="time-of-delivery"  placeholder="TIME OF DELIVERY">
          <button class="btn submit-order" type="submit"><img src="../icons/submit-sm.svg" alt="Submit order"></button>
         </form>
       </section>
@@ -258,17 +256,16 @@
           </div>
         </div>
 
-          <form class="form-contact" action="index.html" method="post">
-
-                  <input class="input" type="text" name="name"  placeholder="NAME">
-                  <input class="input" type="text" name="surname"  placeholder="SURNAME">
-                  <input class="input" type="text" name="email"  placeholder="EMAIL ADDRESS">
-                  <input class="input" type="text" name="subject"  placeholder="SUBJECT">
-                  <textarea name="message" class="textarea" placeholder="MESSAGE" ></textarea>
-                  <button type="submit" class="contact-submit btn"></button>
-
-          </form>
-
+        <div class="form-bg">
+            <form class="form-contact col-max" action="index.html" method="post">
+                    <input class="input" type="text" name="name"  placeholder="NAME">
+                    <input class="input" type="text" name="surname"  placeholder="SURNAME">
+                    <input class="input" type="text" name="email"  placeholder="EMAIL ADDRESS">
+                    <input class="input" type="text" name="subject"  placeholder="SUBJECT">
+                    <textarea name="message" class="textarea" placeholder="MESSAGE" ></textarea>
+                    <button type="submit" class="contact-submit btn"></button>
+            </form>
+        </div>
       </section>
 
       <footer>

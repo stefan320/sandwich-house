@@ -13,7 +13,7 @@ Mobile Nav
   text-align: center;
 }
 #burger {
-  position: fixed;
+  position: absolute;
   top: 40px; /*Container height is 110px */
   right: 7.5%;
   z-index: 5;
@@ -105,7 +105,7 @@ Mobile Nav
   }
 
   #desktop-nav > a {
-    font-weight: 600;
+    font-weight: 500;
     color: #fff;
     text-decoration: none;
     padding-left: 30px;

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "ITCAvantGarde";
+  src: url("../fonts/ITCAvantGardeStd-Bk.otf");
+}
+@font-face {
+  font-family: "ITCAvantGarde";
+  src: url("../fonts/ITCAvantGardeStd-BkCn.otf");
+}
+@font-face {
+  font-family: "ITCAvantGarde";
+  src: url("../fonts/ITCAvantGardeStd-Bold.otf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "ITCAvantGarde";
+  src: url("../fonts/ITCAvantGardeStd-BoldCn.otf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "ITCAvantGarde";
+  src: url("../fonts/ITCAvantGardeStd-DemiObl.otf");
+}
+@font-face {
+  font-family: "ITCAvantGarde-md";
+  src: url("../fonts/ITCAvantGardeStd-Md.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "ITCAvantGarde";
+  src: url("../fonts/ITCAvantGardeStd-MdObl.otf");
+}

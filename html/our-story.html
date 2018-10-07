@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link href="https://fonts.googleapis.com/css?family=Arimo|Montserrat|Raleway" rel="stylesheet">
+      <link href="../css/fonts.css" rel="stylesheet">
       <link rel="stylesheet" href="../css/normalize.css">
       <link rel="stylesheet" href="../css/navbar.css">
       <link rel="stylesheet" href="../css/our-story.css">
@@ -139,16 +139,15 @@
       <div class="top-mob-hero">
          <img class="hands-overlay" src="../imgs/hands.png" alt="hands opening fresh dough with rolling pin">
          <div class="rollingpin-string">
-            <h3>Our Story</h3>
+            <h3 id="fadeIn-header">Our Story</h3>
          </div>
       </div>
       <div id="mob-nav" class="mob-nav">
          <ul id="mob-ul" class="flex-center">
             <li><a href="../index.html">HOME</a></li>
-            <li><a href="#">OUR STORY</a></li>
-            <li><a href="#">ORDER</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">GALLERY</a></li>
+            <li><a href="our-story.html">OUR STORY</a></li>
+            <li><a href="order.html">ORDER</a></li>
+            <li><a href="order.html#contact">CONTACT</a></li>
          </ul>
       </div>
       <!-- End of mob-nav div -->
@@ -158,10 +157,9 @@
       <!-- <img id="nav-logo" class="nav-brand" src="../icons/logo2.svg" alt="The sandwich house logo"> -->
       <nav id="desktop-nav">
          <a href="../index.html">HOME</a>
-         <a href="#">OUR STORY</a>
-         <a href="#">ORDER</a>
-         <a href="#">CONTACT</a>
-         <a href="#">GALLERY</a>
+         <a href="our-story.html">OUR STORY</a>
+         <a href="order.html">ORDER</a>
+         <a href="order.html#contact">CONTACT</a>
       </nav>
       <div class="wrapper">
          <div class="margin-0-auto">
@@ -225,17 +223,38 @@
       <script src="../js/nav.js"></script>
       <script>
          ScrollReveal().reveal('.bottom-hero-filter',{
-           distance: "50px",
-           origin: "left",
+           origin: "top",
+           distance: "500px",
             delay: 450,
             duration: 1200
             });
          ScrollReveal().reveal('.bottom-hero-filter-right',{
-            distance: "50px",
-            origin: "right",
+            distance: "500px",
+            origin: "bottom",
             delay: 450,
-            duration: 1200
+            duration:1200
            });
+           ScrollReveal().reveal('.hands-overlay',{
+              distance: "500px",
+              origin: "top",
+              delay: 100,
+              duration: 600
+            });
+            ScrollReveal().reveal('.rollingpin-string',{
+               distance: "100%",
+               origin: "left",
+               delay: 400,
+               duration: 300,
+               easing: "cubic-bezier(.17,.67,.83,.67)"
+
+              });
+              ScrollReveal().reveal('.rollingpin-string h3',{
+                 delay: 750,
+                 duration: 500,
+                 easing: 'cubic-bezier(.17,.67,.83,.67)'
+                });
+
+
       </script>
    </body>
 </html>

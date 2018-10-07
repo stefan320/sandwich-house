@@ -5,13 +5,11 @@
 *********************/
 html {
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Raleway", sans-serif;
-  font-family: "Arimo", sans-serif;
+  font-family: "ITCAvantGarde", sans-serif;
   background-image: url(../imgs/wood3.jpg);
 }
 .wrapper {
-  max-width: 1250px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -90,13 +88,13 @@ html {
   color: #82564c;
   font-weight: 400;
   font-size: 26px;
-  font-family: "Arimo";
+  font-family: "ITCAvantGarde-Bk";
 }
 
 .par {
   color: #82564c;
   font-weight: 400;
-  font-family: "Monserrat";
+  font-family: "ITCAvantGarde-Bk";
   margin: 0;
   padding: 40px 0 50px;
   font-size: 18px;
@@ -343,11 +341,11 @@ footer {
 
   .rollingpin-string {
     top: 50%;
-    height: 42px;
+    height: 70px;
   }
 
   .rollingpin-string > h3 {
-    font-size: 32px;
+    font-size: 46px;
   }
 
   .bottom-hero {
