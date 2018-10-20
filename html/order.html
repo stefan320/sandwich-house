@@ -55,9 +55,10 @@
        	<path fill="#EEE6D2" d="M36.2,27.5c6,0,10.8,4.8,10.8,10.8S42.2,49,36.2,49s-10.8-4.8-10.8-10.8C25.3,32.2,30.2,27.5,36.2,27.5
        		 M44.1,38.4c0-4.4-3.4-8.1-8.1-8.1c-4.4,0.1-8,3.7-7.8,8.1c0.1,4.4,3.7,7.9,8.2,7.8C40.6,46,44.2,42.5,44.1,38.4"/>
        </symbol>
+     </svg>
 
 
-      <!-- End of nav-container -->
+
       <div class="top-mob-hero">
         <div id="start-page" class="nav-container">
            <img id="burger" src="../icons/burger.svg" alt="open mobile navigation">
@@ -83,167 +84,191 @@
 
       <section class="order-section">
         <h2 class="selection-header">Choose your...</h2>
-        <div class="select-container">
 
-          <select class="bread-select" name="bread-type">
-              <option selected disabled>Bread Type</option>
-              <option value="baguette" data-price="0.8">Baguette</option>
-              <option value="burger bun" data-price="0.8">Burger Bun</option>
-              <option value="ciabatta" data-price="0.8">Ciabatta</option>
-              <option value="focaccia" data-price="0.8">Focaccia</option>
-              <option value="ftira" data-price="0.8">Ftira</option>
-              <option value="olive bread" data-price="0.8">Olive Bread</option>
-              <option value="rye bread" data-price="0.6">Rye Bread</option>
-              <option value="sliced bread" data-price="0.8">Sliced Bread</option>
-              <option value="tortilla" data-price="0.8">Tortilla</option>
-              <option value="wheat bread" data-price="0.8">Wheat Bread</option>
-              <option value="whole grain bread" data-price="0.8">Whole Grain Bread</option>
+
+        <div class="select-container col-max">
+          <select  required="required" class="bread-select" name="bread-type">
+              <option selected disabled data-price="0" value="No selection">Bread Type</option>
+              <option value="Baguette" data-price="0.80">Baguette</option>
+              <option value="Burger Bun" data-price="0.80">Burger Bun</option>
+              <option value="Ciabatta" data-price="0.80">Ciabatta</option>
+              <option value="Focaccia" data-price="0.80">Focaccia</option>
+              <option value="Ftira" data-price="0.80">Ftira</option>
+              <option value="Olive Bread" data-price="0.80">Olive Bread</option>
+              <option value="Rye Bread" data-price="1.60">Rye Bread</option>
+              <option value="Sliced Bread" data-price="0.80">Sliced Bread</option>
+              <option value="Tortilla" data-price="0.80">Tortilla</option>
+              <option value="Wheat Bread" data-price="0.80">Wheat Bread</option>
+              <option value="Whole Grain Bread" data-price="0.80">Whole Grain Bread</option>
           </select>
 
+<div class="checkbox-container">
+  <p>Ingredients</p>
+    <fieldset class="hidden">
+        <legend>Choose your favourite ingredients</legend>
 
-<fieldset>
-    <legend>Choose your favourite ingredients</legend>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="bacon" name="bacon"
+                   value="1.00" />
+            <label class="label" for="bacon">Bacon</label>
+        </div>
 
-    <div>
-        <input type="checkbox" id="bacon" name="bacon"
-               value="1.00" />
-        <label for="bacon">Bacon</label>
-    </div>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="beef" name="Beef"
+                   value="1.50"/>
+            <label class="label" for="beef">Beef</label>
+        </div>
 
-    <div>
-        <input type="checkbox" id="beef" name="Beef"
-               value="1.50"/>
-        <label for="beef">Beef</label>
-    </div>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="carrot" name="carrot"
+                   value="0.50"/>
+            <label class="label" for="carrot">Carrot</label>
+        </div>
 
-    <div>
-        <input type="checkbox" id="carrot" name="carrot"
-               value="0.50"/>
-        <label for="carrot">Carrot</label>
-    </div>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="cucamber" name="cucamber"
+                   value="0.25"/>
+            <label class="label" for="cucamber">Cucamber</label>
+        </div>
 
-    <div>
-        <input type="checkbox" id="cucamber" name="cucamber"
-               value=".25"/>
-        <label for="cucamber">Cucamber</label>
-    </div>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="duck" name="Duck"
+                   value="1.75"/>
+            <label class="label" for="duck">Duck</label>
+        </div>
 
-    <div>
-        <input type="checkbox" id="duck" name="Duck"
-               value="1.75"/>
-        <label for="duck">Duck</label>
-    </div>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="chicken" name="Grilled Chicken"
+                   value="2.00"/>
+            <label class="label" for="chicken">Grilled Chicken</label>
+        </div>
 
-    <div>
-        <input type="checkbox" id="chicken" name="Grilled Chicken"
-               value="2.00"/>
-        <label for="chicken">Grilled Chicken</label>
-    </div>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="ham" name="Ham"
+                   value="0.50"/>
+            <label class="label" for="ham">Ham</label>
+        </div>
 
-    <div>
-        <input type="checkbox" id="ham" name="Ham"
-               value=".5"/>
-        <label for="ham">Ham</label>
-    </div>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="lettuce" name="Lettuce"
+                   value="0"/>
+            <label class="label" for="lettuce">Lettuce</label>
+        </div>
 
-    <div>
-        <input type="checkbox" id="lettuce" name="Lettuce"
-               value="0"/>
-        <label for="lettuce">Lettuce</label>
-    </div>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="mushroom" name="Mushrooms"
+                   value="0.50"/>
+            <label class="label" for="mushroom">Mushrooms</label>
+        </div>
 
-    <div>
-        <input type="checkbox" id="mushroom" name="Mushrooms"
-               value=".5"/>
-        <label for="mushroom">Mushrooms</label>
-    </div>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="olives" name="Olives"
+                   value="0.30"/>
+            <label class="label" for="olives">Olives</label>
+        </div>
 
-    <div>
-        <input type="checkbox" id="olives" name="Olives"
-               value=".3"/>
-        <label for="olives">Olives</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="pork" name="Pork"
-               value="2.00"/>
-        <label for="pork">Pork</label>
-    </div>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="pork" name="Pork"
+                   value="2.00"/>
+            <label class="label" for="pork">Pork</label>
+        </div>
 
 
-    <div>
-        <input type="checkbox" id="fried-egg" name="Fried Eggs"
-               value=".50"/>
-        <label for="fried-egg">Fried Eggs</label>
-    </div>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="fried-egg" name="Fried Eggs"
+                   value="0.50"/>
+            <label class="label" for="fried-egg">Fried Eggs</label>
+        </div>
 
-    <div>
-        <input type="checkbox" id="hard-boiled-egg" name="Hard Boiled Egg"
-               value=".5" />
-        <label for="hard-boiled-egg">Hard Boiled Egg</label>
-    </div>
+        <div class="checkbox-div">
+            <input type="checkbox" class="checkbox" id="hard-boiled-egg" name="Hard Boiled Egg"
+                   value="0.50" />
+            <label class="label" for="hard-boiled-egg">Hard Boiled Egg</label>
+        </div>
 
-</fieldset>
+    </fieldset>
+
+</div>
 
           <select class="sauces-select" name="sauce-select">
-              <option selected disabled>Sauces</option>
-              <option value="chilli sauce"  data-price="0.25">Chilli Sauce</option>
-              <option value="garlic" data-price="0.35">Garlic</option>
-              <option value="ketchup" data-price="0.20">Ketchup</option>
-              <option value="mayonnaise" data-price="0.20">Mayonnaise</option>
-              <option value="garlic basil" data-price="0.35">Garlic Basil</option>
-              <option value="mustard" data-price="0.20">Mustard</option>
+              <option selected disabled value="No Sauce"  data-price="0.00">Sauces</option>
+              <option value="Chilli Sauce"  data-price="0.25">Chilli Sauce</option>
+              <option value="Garlic Sauce" data-price="0.35">Garlic</option>
+              <option value="Ketchup" data-price="0.20">Ketchup</option>
+              <option value="Mayonnaise" data-price="0.20">Mayonnaise</option>
+              <option value="Garlic Basil Sauce" data-price="0.35">Garlic Basil</option>
+              <option value="Mustard" data-price="0.20">Mustard</option>
+              <option value="No Sauce"  data-price="0.00">No Sauce</option>
           </select>
 
           <select class="side-dishes-select" name="side-dishes-select">
-              <option selected disabled>Side Dishes</option>
-              <option value="coleslaw" data-price="1.20">Coleslaw</option>
-              <option value="curly fries" data-price="1.8">Curly Fries</option>
-              <option value="mixed salad" data-price="2.8">Mixed Salad</option>
-              <option value="potato wedges" data-price="1.8">Potato Wedges</option>
-              <option value="potato salad" data-price="2.2">Potatoes Salad</option>
-              <option value="sliced potatoes fries" data-price="1.8">Sliced Potatoes Fries</option>
-              <option value="sweet potatoes fries" data-price="2.8">Sweet Potatoes Fries</option>
+              <option selected disabled value="No side dishes"  data-price="0.00">Side Dishes</option>
+              <option value="Coleslaw" data-price="1.20">Coleslaw</option>
+              <option value="Curly Fries" data-price="1.80">Curly Fries</option>
+              <option value="Mixed Salad" data-price="2.80">Mixed Salad</option>
+              <option value="Potato Wedges" data-price="1.80">Potato Wedges</option>
+              <option value="Potato Salad" data-price="2.20">Potatoes Salad</option>
+              <option value="Sliced Potatoes Fries" data-price="1.80">Sliced Potatoes Fries</option>
+              <option value="Sweet Potatoes Fries" data-price="2.80">Sweet Potatoes Fries</option>
+              <option value="No Side Dishes" data-price="0.00">No side dishes</option>
           </select>
 
           <select class="drinks-select" name="drinks-select">
-              <option selected disabled>Drinks</option>
-              <option value="Still Water" data-price="0.8">Still Water</option>
-              <option value="Fizzy Water" data-price="0.8">Fizzy Water</option>
-              <option value="coca cola" data-price="1.7">Coca Cola</option>
-              <option value="sprite" data-price="1.7">Sprite</option>
-              <option value="fanta" data-price="1.7">Fanta</option>
-              <option value="kinnie" data-price="1.7">Kinnie</option>
-              <option value="cisk" data-price="1.9">Cisk</option>
+              <option selected disabled value="No drinks" data-price="0.00">Drinks</option>
+              <option value="Still Water" data-price="0.80">Still Water</option>
+              <option value="Fizzy Water" data-price="0.80">Fizzy Water</option>
+              <option value="Coca Cola" data-price="1.70">Coca Cola</option>
+              <option value="Sprite" data-price="1.70">Sprite</option>
+              <option value="Fanta" data-price="1.70">Fanta</option>
+              <option value="Kinnie" data-price="1.70">Kinnie</option>
+              <option value="Cisk" data-price="1.90">Cisk</option>
+              <option value="No Drinks" data-price="0.00">No drinks</option>
           </select>
 
           <select class="toasted-select" name="toasted-select">
-              <option selected disabled>Toasted</option>
-              <option value="yes" data-price="0.30">Yes</option>
-              <option value="no" data-price="0">No</option>
+              <option selected disabled value="Not Toasted" data-price="0.00">Toasted</option>
+              <option value="Toasted" data-price="0.30">Yes</option>
+              <option value="Not Toasted" data-price="0">No</option>
           </select>
-        </div>
+          </div>
 
         <div class="order-nav">
-          <button type="button" class="btn pd-x-10"><img id="add-sandwich" class="icon-small" src="../icons/add-sign.svg" alt="Add sandwich to order"></button>
-          <button type="button" class="btn pd-x-10"><img id="confirm=-order" class="icon-small" src="../icons/confirm-sign.svg" alt="Add sandwich to order"></button>
+          <button type="submit" id="add-sandwich" class="btn pd-x-10" value="submit"><img id="confirm-order" class="icon-small" src="../icons/add-sign.svg" alt="Add sandwich to order"></button>
+          <button type="button" class="btn pd-x-10"><img  class="icon-small" src="../icons/confirm-sign.svg" alt="Finish order"></button>
         </div>
+
+        <section class="checkout">
+            <div class="order-h-container">
+              <h2 class="order-heading">Your Order</h2>
+            </div>
+            <div class="order-container">
+                <div id="order-details"  class="order-details">
+
+
+                </div>
+                <div class="bill-div">
+                  <p  class="print-bill white"></p>
+                  <p  class="print-bill mustard"></p>
+                </div>
+            </div>
+
+        </section>
 
         <form class="form col-max" action="#">
           <input class="input" type="text" name="name"  placeholder="NAME">
           <input class="input" type="text" name="surname"  placeholder="SURNAME">
-          <input class="input flex-grow" type="text" name="address"  placeholder="ADDRESS">
+          <input class="input input-grow" type="text" name="address"  placeholder="ADDRESS">
           <input class="input flex-order" type="text" name="mobile"  placeholder="MOBILE">
-          <input  class="input flex-grow" type="text" name="email"  placeholder="EMAIL ADDRESS">
+          <input class="input input-grow email-resize" type="text" name="email"  placeholder="EMAIL ADDRESS">
           <input class="input flex-order" type="text" name="time-of-delivery"  placeholder="TIME OF DELIVERY">
-         <button class="btn submit-order" type="submit"><img src="../icons/submit-sm.svg" alt="Submit order"></button>
+         <button class="btn submit-order" type="submit"></button>
         </form>
       </section>
 
       <section id="contact" class="contact">
         <div class="bg-container">
           <div class="bg-rgba-blue flex-center">
-            <h2 class="h-white">LET'S  TALK</h2>
+            <h2 class="h-white">LET'S TALK</h2>
           </div>
 
         </div>
@@ -258,15 +283,16 @@
 
         <div class="form-bg">
             <form class="form-contact col-max" action="index.html" method="post">
-                    <input class="input" type="text" name="name"  placeholder="NAME">
-                    <input class="input" type="text" name="surname"  placeholder="SURNAME">
-                    <input class="input" type="text" name="email"  placeholder="EMAIL ADDRESS">
-                    <input class="input" type="text" name="subject"  placeholder="SUBJECT">
+                    <input class="contact-input" type="text" name="name"  placeholder="NAME">
+                    <input class="contact-input" type="text" name="surname"  placeholder="SURNAME">
+                    <input class="contact-input" type="text" name="email"  placeholder="EMAIL ADDRESS">
+                    <input class="contact-input" type="text" name="subject"  placeholder="SUBJECT">
                     <textarea name="message" class="textarea" placeholder="MESSAGE" ></textarea>
                     <button type="submit" class="contact-submit btn"></button>
             </form>
         </div>
       </section>
+
 
       <footer>
          <div class="footer-container col-max">
@@ -298,7 +324,7 @@
          </div>
       </footer>
 
-    <script src="../js/order.js"></script>
+    <script src="../js/refactor.js"></script>
     <script src="../js/nav.js"></script>
   </body>
 </html>
