@@ -36,7 +36,7 @@ function getIngredientsInfo() {
   //loop through check boxes
   for (let i = 0; i < checkBoxes.length; i++) {
     //add event listener to check boxes
-    checkBoxes[i].addEventListener("change", function() {
+    checkBoxes[i].addEventListener("change", function(event) {
       if (event.target.checked) {
         //push the name of ingredient to ingredients array
         ingredients.push(event.target.name);
@@ -121,13 +121,13 @@ function printOrder() {
 /////////////
 
 checkboxContainer.addEventListener("click", function() {
-  if (
-    event.target.className !== "checkbox" &&
-    event.target.className !== "checkbox-div" &&
-    event.target.className !== "label"
-  ) {
-    fieldset.classList.toggle("hidden");
-  }
+  // if (
+  //   event.target.className !== "checkbox" &&
+  //   event.target.className !== "checkbox-div" &&
+  //   event.target.className !== "label"
+  // ) {
+  fieldset.classList.toggle("hidden");
+  //  }
 });
 
 getIngredientsInfo();
