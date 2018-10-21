@@ -6,6 +6,29 @@ Nav
 .nav-container {
   height: 0;
 }
+/*************************
+******
+Fonts
+******
+**************************/
+
+h1,
+.footer-text {
+  font-family: "ITCAvantGarde-book";
+}
+.header-lighter {
+  font-family: "ITCAvantGarde-book-cd";
+}
+.header-bold,
+.h-blue {
+  font-family: "ITCAvantGarde-bold-cd";
+}
+.col p {
+  font-family: "ITCAvantGarde-md";
+}
+.h-white {
+  font-family: "ITCAvantGarde-mdobl";
+}
 
 /*************************
 ******
@@ -14,7 +37,6 @@ Base styles
 **************************/
 html {
   overflow-x: hidden;
-  font-family: "Montserrat", "PT Sans";
 }
 
 .col-max {
@@ -126,7 +148,7 @@ Mobile Start
   height: 230px;
 }
 .header-lighter {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   font-size: 46px;
   font-weight: 400;
   color: #82564c;
@@ -134,15 +156,14 @@ Mobile Start
 
 .h-blue {
   color: #2d7e9b;
-  font-family: sans-serif;
-  margin: 20px auto;
+  margin: 25px auto;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 .header-bold {
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 900;
-  letter-spacing: 2px;
   color: #82564c;
-  font-family: sans-serif;
   margin: 0;
 }
 .arrow-div {
@@ -166,6 +187,7 @@ Mobile Start
   font-size: 25px;
   margin: 0;
   font-style: italic;
+  font-weight: 400;
 }
 .flex-center {
   flex-direction: column;

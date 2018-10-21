@@ -2,6 +2,7 @@ var itemSelect = document.querySelectorAll("select");
 var addSandwich = document.getElementById("add-sandwich");
 var checkBoxes = document.getElementsByClassName("checkbox");
 var checkboxContainer = document.querySelector(".checkbox-container");
+var orderDiv = document.getElementsByClassName("checkout")[0];
 var fieldset = document.querySelector(".checkbox-container fieldset");
 var orderDetails = document.getElementById("order-details");
 var printBill = document.getElementsByClassName("print-bill");
@@ -51,8 +52,6 @@ function getIngredientsInfo() {
       }
     });
   }
-  console.log(ingredients);
-  console.log(ingredientsPrice);
 }
 
 function resetValues() {
@@ -86,6 +85,9 @@ function printOrder() {
       "Invalid order. Please make sure you have selected a bread type and at least two ingredients."
     );
   } else {
+    if (sandwichNumber < 1) {
+      orderDiv.classList.add("show-order");
+    }
     for (var i = 0; i < orderItems.length; i++) {
       html +=
         "<dt class='item'>" +
@@ -120,14 +122,14 @@ function printOrder() {
 ///Events////
 /////////////
 
-checkboxContainer.addEventListener("click", function() {
-  // if (
-  //   event.target.className !== "checkbox" &&
-  //   event.target.className !== "checkbox-div" &&
-  //   event.target.className !== "label"
-  // ) {
-  fieldset.classList.toggle("hidden");
-  //  }
+checkboxContainer.addEventListener("click", function(event) {
+  if (
+    event.target.className !== "checkbox" &&
+    event.target.className !== "checkbox-div" &&
+    event.target.className !== "label"
+  ) {
+    fieldset.classList.toggle("hidden");
+  }
 });
 
 getIngredientsInfo();

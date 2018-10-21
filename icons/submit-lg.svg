@@ -11,7 +11,7 @@
 	 x="0px" y="0px" width="136.7px" height="148.5px" viewBox="0 0 126.7 137.5" enable-background="new 0 0 126.7 137.5"
 	 xml:space="preserve">
 <g>
-	<rect fill="#2D7E9B" width="126.7" height="137.5"/>
+	<rect id="submit-fill" fill="#2D7E9B" width="126.7" height="137.5"/>
 	<path fill="#EEE7D3" d="M61.6,65.5l-1.8,18.6c0,0-0.4,1.2,0.8,1.8c0,0,0.9,0.5,1.9-1l20.9-31.1c0,0,0.8-0.9,0.2-1.9
 		c0,0-0.3-0.6-1.6-0.4l-37.2,4.3c0,0-1.6-0.1-1.8,1.2c0,0-0.2,1,1,1.5L61.6,65.5z"/>
 </g>

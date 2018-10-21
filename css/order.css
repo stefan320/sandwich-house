@@ -8,8 +8,8 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 0;
+  outline: transparent;
 }
-
 .margin-l-r {
   padding: 0 12px;
 }
@@ -98,7 +98,7 @@ select {
   margin: 0 auto;
   width: 90%;
   height: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #eab766;
   background-color: #82564c;
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@ button styles
   background: #ddc397 url("../icons/submit-sm.svg") no-repeat center;
   height: 50px;
   width: 50%;
-  margin: 20px auto;
+  margin: 20px auto 0;
 }
 .pd-x-10 {
   padding: 0 20px;
@@ -163,11 +163,31 @@ Order checkout Div styles
 ******
 **************************/
 .checkout {
+  visibility: hidden;
   width: 100%;
-  height: 550px;
+  height: 0px; /* height is set by javascript printOrder function */
+  transition: all 1.5s;
   background: transparent url("../imgs/wood.jpg") center no-repeat;
   background-size: cover;
   overflow-y: scroll;
+}
+.checkout::-webkit-scrollbar {
+  width: 8px;
+}
+
+.checkout::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(45, 126, 155, 0.7);
+  border-radius: 6px;
+}
+
+.checkout::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: 0 0 6px rgba(45, 126, 155, 0.7);
+  background-color: #fff;
+}
+.show-order {
+  visibility: visible;
+  height: 550px;
+  margin-bottom: 25px;
 }
 
 .order-h-container {
@@ -210,7 +230,6 @@ Order checkout Div styles
 .item,
 .price {
   display: inline-block;
-  width: 40%;
   padding: 8px 0;
 }
 .total,
@@ -222,12 +241,15 @@ Order checkout Div styles
 .item {
   color: #fff;
   text-align: left;
+  text-transform: capitalize;
+  width: 62.5%;
 }
 
 .price {
   color: #eab766;
   margin: 0;
   text-align: right;
+  width: 22.5%;
 }
 .bill-div {
   border-top: 1px solid #fff;
@@ -242,6 +264,8 @@ FORM STYLES
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 25px;
+  /*A 25px margin bottom  is added to show-order*/
 }
 
 .input-grow {
@@ -395,7 +419,7 @@ CONTACT FORM
   background: url("../imgs/pastry-bg-mob.jpg") scroll no-repeat center;
   background-size: cover;
   width: 100%;
-  height: 450px;
+  height: 350px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -422,7 +446,6 @@ CONTACT FORM
 }
 
 textarea {
-  padding: 0;
   margin: 3px 0 0;
   width: calc(99% - 126.7px);
   border: none;
@@ -440,7 +463,7 @@ textarea,
 .checkbox-container {
   height: 50px;
   width: 90%;
-  margin: 0 auto 30px;
+  margin: 0 auto 20px;
   background-color: #82564c;
   background-image: url("../icons/ingredients-logo.svg"),
     url("../icons/select-arrow.svg");
@@ -506,6 +529,12 @@ footer {
     align-content: space-between;
     height: 190px;
   }
+  .order-nav {
+    padding: 40px 0 37px;
+  }
+  .input-grow {
+    max-width: 49.5%;
+  }
 }
 
 @media only screen and (min-width: 730px) {
@@ -524,13 +553,19 @@ footer {
     height: 50px;
   }
 
-  select,
-  .checkbox-container {
-    width: calc(33% - 6px);
-  }
-
   .flex-order {
     order: 0;
+  }
+
+  .order-details {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .row {
+    width: 50%;
+    padding: 15px 0;
   }
 
   .input-grow {
@@ -549,6 +584,10 @@ footer {
   .form-bg {
     background: url("../imgs/pastry-bg-md.jpg") scroll no-repeat 0 0;
     background-size: cover;
+  }
+
+  .form {
+    padding-bottom: 0;
   }
 
   textarea {
@@ -572,5 +611,15 @@ footer {
 
   .footer-text > p {
     display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  select,
+  .checkbox-container {
+    width: calc(33% - 6px);
+  }
+  .select-container {
+    height: 140px;
   }
 }
