@@ -136,7 +136,7 @@
         </a>
       </div>
       <!-- End of nav-container -->
-      <div class="top-mob-hero">
+      <div id="hero" class="top-mob-hero">
          <img class="hands-overlay" src="../imgs/hands.png" alt="hands opening fresh dough with rolling pin">
          <div class="rollingpin-string">
             <h3 id="fadeIn-header">Our Story</h3>
@@ -236,6 +236,10 @@
             delay: 450,
             duration:1200
            });
+           var hero = document.getElementById("hero");
+           hero.addEventListener("load",function(){
+             console.log("loaded");
+
            ScrollReveal().reveal('.hands-overlay',{
               distance: "500px",
               origin: "top",
@@ -257,6 +261,7 @@
                  duration: 500,
                  easing: 'cubic-bezier(.17,.67,.83,.67)'
                 });
+              });
 
 
       </script>
