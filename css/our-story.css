@@ -1,13 +1,22 @@
 /*********************
+    *****Fonts ******
+*********************/
+h3 {
+  font-family: "Roboto Condensed", "Montserrat";
+}
+.h-brown,
+.h-brown span,
+.par,
+p {
+  font-family: "Roboto", "Montserrat";
+}
+
+/*********************
 **********************
 *****Base Styles******
 **********************
 *********************/
-html {
-  overflow-x: hidden;
-  font-family: "ITCAvantGarde", sans-serif;
-  background-image: url(../imgs/wood3.jpg);
-}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -41,9 +50,41 @@ html {
 }
 
 .rollingpin-string {
-  background-color: rgba(252, 210, 30, 0.4);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(241, 170, 90, 0.9)),
+    color-stop(rgba(251, 219, 155, 0.5)),
+    to(rgba(241, 170, 90, 0.9))
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    rgba(241, 170, 90, 0.9),
+    rgba(251, 219, 155, 0.5),
+    rgba(241, 170, 90, 0.9)
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgba(241, 170, 90, 0.9),
+    rgba(251, 219, 155, 0.5),
+    rgba(241, 170, 90, 0.9)
+  );
+  background-image: linear-gradient(
+    to right,
+    rgba(241, 170, 90, 0.9),
+    rgba(251, 219, 155, 0.5),
+    rgba(241, 170, 90, 0.9)
+  );
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   position: absolute;
   top: 65%;
@@ -53,7 +94,7 @@ html {
 
 .rollingpin-string > h3 {
   font-size: 22px;
-  font-weight: 900;
+  font-weight: 700;
   color: #82564c;
 }
 
@@ -77,24 +118,23 @@ html {
 .header-mustard {
   color: #eab766;
   display: block;
-  font-weight: 600;
-  padding-top: 20px;
+  font-weight: 500;
+  padding-top: 15px;
 }
 .header-padding {
-  padding: 20% 50px;
+  padding: 15% 0;
+  width: 284px;
 }
 
 .h-brown {
   color: #82564c;
   font-weight: 400;
   font-size: 26px;
-  font-family: "ITCAvantGarde-Bk";
 }
 
 .par {
   color: #82564c;
   font-weight: 400;
-  font-family: "ITCAvantGarde-Bk";
   margin: 0;
   padding: 40px 0 50px;
   font-size: 18px;
@@ -112,12 +152,6 @@ html {
 *****MOBILE NAV*******
 **********************
 *********************/
-
-/* .container-lg{
-  border: 7px solid blue;
-  background-color: #82564C;
-  width: 100%;
-} */
 
 .bottom-hero {
   position: relative;
@@ -158,6 +192,8 @@ html {
 .skew-text {
   position: absolute;
   top: 9%;
+  -webkit-transform: skew(-12deg, 10deg);
+  -ms-transform: skew(-12deg, 10deg);
   transform: skew(-12deg, 10deg);
   left: 32%;
   width: 58%;
@@ -173,7 +209,7 @@ html {
 }
 
 .special-text:first-of-type {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 /*************************
@@ -188,9 +224,16 @@ footer {
 }
 
 .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -202,6 +245,8 @@ footer {
 }
 
 .footer-icons {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
   order: -1;
 }
 
@@ -219,6 +264,10 @@ footer {
   .rollingpin-string {
     height: 40px;
     top: 65%;
+  }
+
+  .rollingpin-string > h3 {
+    font-size: 26px;
   }
 
   .bg-note {
@@ -264,9 +313,12 @@ footer {
 
   .header-padding {
     padding: 10% 0 5% 30%;
+    width: auto;
   }
 
   .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 100%;
     background-color: #eee7d3;
@@ -292,9 +344,18 @@ footer {
   }
 
   .justify-evenly {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -306,13 +367,22 @@ footer {
   }
 
   .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
   .footer-text {
     padding: 0;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
     order: -1;
   }
 
@@ -370,9 +440,7 @@ footer {
     top: 16%;
   }
 
-  /*************************
-  ******
-  NAV EXTRA
-  *****
-  *************************/
+  html {
+    background-image: url(../imgs/wood3.jpg);
+  }
 }
