@@ -1,8 +1,6 @@
 const burger = document.getElementById("burger");
 const mobNav = document.getElementById("mob-nav");
-const navLogo = document.getElementById("nav-logo");
 const mobUl = document.getElementById("mob-ul"); //The mobile nav ul id
-const desktopNav = document.getElementById("desktop-nav");
 
 function showNav() {
   mobUl.style.display = "flex";

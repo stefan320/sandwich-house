@@ -11,16 +11,10 @@ var orderItems = [];
 var orderPrices = [];
 var ingredients = [];
 var ingredientsPrice = [];
-var totalItems;
 var orders = [];
 var index = [];
 var html = "";
 var billTotal = 0;
-var whileLoad = document.getElementById("while-load");
-
-window.addEventListener("load", function() {
-  whileLoad.style.display = "none";
-});
 
 // get the index of the selected items drop down list
 function choiceIndex() {
@@ -85,7 +79,7 @@ function addPrices() {
 /////////////////
 
 function printOrder() {
-  if (orderItems[0] === "No selection" || checkBoxes < 2) {
+  if (orderItems[0] === "No selection" || ingredients.length < 2) {
     alert(
       "Invalid order. Please make sure you have selected a bread type and at least two ingredients."
     );

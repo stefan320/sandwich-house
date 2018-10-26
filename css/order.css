@@ -1,18 +1,3 @@
-#while-load {
-  background-color: #000;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.loading-logo {
-  transition: transform 5s ease-out;
-  transform: rotateY(360deg);
-  /* animation-iteration-count: 2; */
-}
 h1,
 h2,
 h3 {
@@ -89,6 +74,7 @@ Hero styles
 }
 
 .overlay-header {
+  text-transform: uppercase;
   font-size: 50px;
   color: #82564c;
 }
